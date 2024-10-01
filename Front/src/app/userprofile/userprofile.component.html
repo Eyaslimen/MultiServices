@@ -1,0 +1,19 @@
+<div class="profile-container" *ngIf="currentUser">
+    <h1>{{ currentUser.employeName }}'s Profile</h1>
+    <img [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}"> 
+    
+    <p><strong>Email:</strong> {{ currentUser.email }}</p>
+    <p><strong>Phone:</strong> {{ currentUser.phone }}</p>
+    <p><strong>Post:</strong> {{ currentUser.post }}</p>
+    <p><strong>Description:</strong> {{ currentUser.description }}</p>
+   <img [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}"> 
+    <h3>Work Photos</h3>
+    <div *ngIf="currentUser.photoUrls && currentUser.photoUrls.length > 0">
+      <img *ngFor="let photo of currentUser.photoUrls" [src]="photo" alt="Work Photo" class="work-photo">
+    </div>
+  
+    <h3>Work Videos</h3>
+    <div *ngIf="currentUser.videoUrls && currentUser.videoUrls.length > 0">
+      <video *ngFor="let video of currentUser.videoUrls" controls [src]="video" class="work-video"></video>
+    </div>
+  </div>
