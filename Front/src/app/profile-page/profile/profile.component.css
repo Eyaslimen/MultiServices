@@ -1,0 +1,36 @@
+.profile_info {
+    margin-top: 2%;
+    width: 86%;
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: 25% 75%;
+    gap: 2%;
+}
+.image {
+    border-radius: 3px;
+    padding: 10px;
+    background-color: rgb(243, 243, 243);
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.523);
+    height: 150px;
+
+}
+img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+  }
+  .infos {
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.523);
+    padding: 10px;
+    background-color: #f0fdf7;
+  }
+button {
+    margin-left: 80%;
+    border: none;
+    background-color: green;
+    padding: 10px;
+    font-weight: 200;
+    cursor: pointer;
+  }

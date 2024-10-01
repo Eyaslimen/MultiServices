@@ -1,0 +1,65 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\Aya.png",
+      "PackagePath": "staticwebassets\\uploads\\Aya.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\aya.jpg",
+      "PackagePath": "staticwebassets\\uploads\\aya.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ayasl.png",
+      "PackagePath": "staticwebassets\\uploads\\ayasl.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\eyaslimen.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eyaslimen.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\iaa.png",
+      "PackagePath": "staticwebassets\\uploads\\iaa.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing3500.png",
+      "PackagePath": "staticwebassets\\uploads\\ing3500.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing3500_2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ing3500_2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing5000.png",
+      "PackagePath": "staticwebassets\\uploads\\ing5000.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\logoo.png",
+      "PackagePath": "staticwebassets\\uploads\\logoo.png"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\m.jpg",
+      "PackagePath": "staticwebassets\\uploads\\m.jpg"
+    },
+    {
+      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\telnetLogo.jpg",
+      "PackagePath": "staticwebassets\\uploads\\telnetLogo.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MultiServices.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MultiServices.props",
+      "PackagePath": "build\\MultiServices.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MultiServices.props",
+      "PackagePath": "buildMultiTargeting\\MultiServices.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MultiServices.props",
+      "PackagePath": "buildTransitive\\MultiServices.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

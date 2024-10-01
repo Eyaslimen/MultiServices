@@ -1,0 +1,36 @@
+.use_part {
+padding: 2%;
+}
+h4 {
+  color: #075b61;
+  letter-spacing: 1px;
+}
+.card {
+  background-color: white;
+  height: auto;
+  padding: 5%;
+  text-align: center;
+  box-shadow: 2px 3px 2px 1px #075b6143;
+}
+.card:hover {
+  cursor: pointer;
+  scale: 1.1;
+}
+.use {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 80%;
+  margin-left: 10%;
+  gap: 10%;
+}
+img {
+  width: 80px;
+  height: 80px;
+}
+h1 {
+  text-align: center;
+  color: #075b61;
+  font-size: 3.5vw;
+  margin-top: 5%
+}

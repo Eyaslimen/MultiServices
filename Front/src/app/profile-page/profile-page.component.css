@@ -1,0 +1,17 @@
+button {
+    margin-top: 2%;
+    padding: 12px;
+    width: 23%;
+    cursor: pointer;
+    font-size: large;
+    border: 1px solid rgba(0, 0, 0, 0.228);
+}
+
+.profile-navbar {
+    margin-left: 5%;
+}
+
+button.active {
+    background-color: #f0fdf7;
+    color: black; /* Modifie les couleurs comme tu veux */
+}
