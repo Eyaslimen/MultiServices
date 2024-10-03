@@ -4529,11 +4529,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\MultiServices.csproj",
+      "projectUniqueName": "E:\\MultiServices\\MultiServices_backend\\MultiServices.csproj",
       "projectName": "MultiServices",
-      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\MultiServices.csproj",
+      "projectPath": "E:\\MultiServices\\MultiServices_backend\\MultiServices.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\obj\\",
+      "outputPath": "E:\\MultiServices\\MultiServices_backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",

@@ -1,0 +1,14 @@
+.workVideos {
+    text-align: center;
+}
+.videos {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    width: 87%;
+    margin-left: 5%;
+    gap: 1%;
+    border: 5px solid red;
+}
+video {
+    width: 100%;
+}

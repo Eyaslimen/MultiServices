@@ -1,1 +1,6 @@
-<p>videos works!</p>
+<div class="workVideos">
+    <h3>Vidéos</h3>
+    <div class="videos" *ngIf="currentUser.videoUrls && currentUser.videoUrls.length > 0" >
+        <video *ngFor="let video of currentUser.videoUrls" controls [src]="'http://localhost:5239/' + video" class="work-video"></video>
+      </div>
+    </div>

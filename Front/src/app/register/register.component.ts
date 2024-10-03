@@ -31,7 +31,7 @@ export class RegisterComponent {
     if (input && input.files) {
       this.workPhotos = Array.from(input.files);
     }
-  }
+  } 
 
   handleWorkVideosInput(event: Event) {
     const input = event.target as HTMLInputElement;
@@ -58,7 +58,10 @@ export class RegisterComponent {
 
       if (this.workPhotos.length > 0) {
         this.workPhotos.forEach(photo => {
-          formData.append('WorkPhotos', photo, photo.name);
+          formData.append('WorkPhotos', /* In the `onSubmit` method of the `RegisterComponent` class,
+          the `photo` variable is used as a parameter in the `forEach`
+          loop to iterate over the `workPhotos` array. */
+          photo, photo.name);
         });
       }
 

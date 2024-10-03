@@ -9,11 +9,11 @@
    <img [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}"> 
     <h3>Work Photos</h3>
     <div *ngIf="currentUser.photoUrls && currentUser.photoUrls.length > 0">
-      <img *ngFor="let photo of currentUser.photoUrls" [src]="photo" alt="Work Photo" class="work-photo">
+      <img *ngFor="let photo of currentUser.photoUrls" [src]="'http://localhost:5239/' + photo" alt="Work Photo" class="work-photo">
     </div>
   
     <h3>Work Videos</h3>
     <div *ngIf="currentUser.videoUrls && currentUser.videoUrls.length > 0">
-      <video *ngFor="let video of currentUser.videoUrls" controls [src]="video" class="work-video"></video>
+      <video *ngFor="let video of currentUser.videoUrls" controls [src]="'http://localhost:5239/' + video" class="work-video"></video>
     </div>
   </div>

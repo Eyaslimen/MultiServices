@@ -1,29 +1,34 @@
-<div class="profile_info">
+<div class="profile_info">   
+    
     <div class="image">
-        <img src="eyaslimen.jpg" alt="">
-        <p>username</p>
+        <img [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}"> 
+        <p>{{ currentUser.employeName }}</p>
     </div>
     <div class="infos">
         <div class="poste">
             <h5>Poste :</h5>
-            <p>Ingénieure</p>
+            <p>{{ currentUser.post }}</p>
         </div>
         <div class="email">
             <h5>Email :</h5>
-            <p>aya&#64;gmail.com</p>
+            <p> {{ currentUser.email }}</p>
         </div>
         <div class="phone">
             <h5>Telephone :</h5>
-            <p>24923967</p>
+            <p> {{ currentUser.phone }}</p>
+
         </div>
         <div class="adress">
-            <h5>Adresse :</h5>
-            <p>Tunis</p>
+            <h5>Adress :</h5>
+            <p>{{ currentUser.place }}</p>
         </div>
         <div class="description">
             <h5>Description :</h5>
-            <p>je suis une ingénieure d'informatique , spécialisée dans le domaine de développement web , je suis une jeune motivé et serieuse</p>
+            <p> {{ currentUser.description }}</p>
         </div>
-        <button>Modifier Profile</button>
+        <div class="buttons">
+        <button style="background-color: green;" routerLink="/editProfile">Modifier Profile</button>
+        <button style="background-color: rgb(90, 88, 88);" (click)="logout()">Déconnexion</button>
+    </div>
     </div>
 </div>

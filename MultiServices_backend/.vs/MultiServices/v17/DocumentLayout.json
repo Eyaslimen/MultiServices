@@ -1,69 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\",
+  "WorkspaceRootPath": "E:\\MultiServices\\MultiServices_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\employeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\employeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|c:\\users\\lenovo\\source\\repos\\multiservices\\multiservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\multiservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:multiservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     }
   ],
@@ -78,23 +82,24 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "EmployeUpdateDto.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeUpdateDto.cs",
+              "RelativeDocumentMoniker": "Dtos\\EmployeUpdateDto.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeUpdateDto.cs",
+              "RelativeToolTip": "Dtos\\EmployeUpdateDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA3wA8AAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:27:20.224Z"
+              "WhenOpened": "2024-10-02T17:46:32.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\CategoryController.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\CategoryController.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAABAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -102,36 +107,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "EmployeDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\EmployeDto.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeDto.cs",
               "RelativeDocumentMoniker": "Dtos\\EmployeDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\EmployeDto.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeDto.cs",
               "RelativeToolTip": "Dtos\\EmployeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA0AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:19:47.845Z"
+              "WhenOpened": "2024-08-25T13:19:47.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "EmployeController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\EmployeController.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\EmployeController.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeToolTip": "Controllers\\EmployeController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAATAAAA",
+              "ViewState": "AQIAAMAAAAAAAAAAAAAuwNMAAAA7AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:54:36.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "UserLoginDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\UserLoginDto.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserLoginDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\UserLoginDto.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\UserLoginDto.cs",
               "RelativeToolTip": "Dtos\\UserLoginDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -139,11 +145,36 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
+              "Title": "Employe.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
+              "RelativeDocumentMoniker": "Models\\Employe.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
+              "RelativeToolTip": "Models\\Employe.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T14:33:59.587Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAACYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-23T12:27:20.224Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "ClientController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\ClientController.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\ClientController.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ClientController.cs",
               "RelativeToolTip": "Controllers\\ClientController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA9AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -151,11 +182,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "MultiServicesContext.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Data\\MultiServicesContext.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Data\\MultiServicesContext.cs",
               "RelativeDocumentMoniker": "Data\\MultiServicesContext.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Data\\MultiServicesContext.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Data\\MultiServicesContext.cs",
               "RelativeToolTip": "Data\\MultiServicesContext.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAYwBkAAAAuAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,23 +194,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Employe.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Employe.cs",
-              "RelativeDocumentMoniker": "Models\\Employe.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Employe.cs",
-              "RelativeToolTip": "Models\\Employe.cs",
-              "ViewState": "AQIAAAoAAAAAAAAAAAAiwBEAAABfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:33:59.587Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Category.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Category.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Category.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Category.cs",
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -187,11 +206,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Client.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Client.cs",
               "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Client.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Client.cs",
               "RelativeToolTip": "Models\\Client.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -199,11 +218,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ReviewDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\ReviewDto.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\ReviewDto.cs",
               "RelativeDocumentMoniker": "Dtos\\ReviewDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\ReviewDto.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\ReviewDto.cs",
               "RelativeToolTip": "Dtos\\ReviewDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -211,11 +230,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Review.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Review.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Models\\Review.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Review.cs",
               "RelativeToolTip": "Models\\Review.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -223,11 +242,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ReviewController.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\ReviewController.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Controllers\\ReviewController.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "Controllers\\ReviewController.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAmwBIAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -235,11 +254,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CategoryDto.cs",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\CategoryDto.cs",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\CategoryDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CategoryDto.cs",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\Dtos\\CategoryDto.cs",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\CategoryDto.cs",
               "RelativeToolTip": "Dtos\\CategoryDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -247,11 +266,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\appsettings.json",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\appsettings.json",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\appsettings.json",
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -259,11 +278,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "MultiServices.http",
-              "DocumentMoniker": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\MultiServices.http",
+              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\MultiServices.http",
               "RelativeDocumentMoniker": "MultiServices.http",
-              "ToolTip": "C:\\Users\\LENOVO\\source\\repos\\MultiServices\\MultiServices.http",
+              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\MultiServices.http",
               "RelativeToolTip": "MultiServices.http",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",

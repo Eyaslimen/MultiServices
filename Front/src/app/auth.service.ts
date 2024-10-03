@@ -32,10 +32,12 @@ export class AuthService {
     );
   }
 
+  /* The `logout()` method in the AuthService class is responsible for logging out the current user.
+  Here's what it does: */
   logout(): void {
     localStorage.removeItem('currentUser');
     this.currentUserSubject.next(null);
-  }
+  } 
 
   getCurrentUser(): Observable<any> {
     return this.currentUser;
@@ -48,6 +50,20 @@ export class AuthService {
       }),
       catchError(error => {
         console.error('Error registering user:', error);
+        return throwError(error);
+      })
+    );
+  }
+  update(formData: FormData): Observable<any> {
+    return this.http.put(`${this.apiUrl}/editprofile`, formData).pipe(
+      tap((response: any) => {
+        console.log('prodile modifié', response);
+        //cette etape est necessaire pour avoir directement modifier le profile et ne reste pas faire du deconx et login pour avoir les modifications !!
+        localStorage.setItem('currentUser', JSON.stringify(response));
+        this.currentUserSubject.next(response);
+      }),
+      catchError(error => {
+        console.error('Error update user:', error);
         return throwError(error);
       })
     );

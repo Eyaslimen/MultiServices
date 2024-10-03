@@ -6,6 +6,7 @@ using MultiServices.Dtos;
 using System.Security.Cryptography;
 using System.Text;
 using Microsoft.AspNetCore.Identity;
+using Azure.Core;
 
 namespace MultiServices.Controllers
 {
@@ -55,14 +56,12 @@ namespace MultiServices.Controllers
             if (await UserExists(employeRegisterDto.EmployeName))
                 return BadRequest("Username is already taken");
 
-            // Recherche de la catégorie
             var category = await _context.Categories
                 .FirstOrDefaultAsync(c => c.Name == employeRegisterDto.CategoryName);
 
             if (category == null)
                 return BadRequest("Category not found");
 
-            // Création du hash du mot de passe
             CreatePasswordHash(employeRegisterDto.Password, out string passwordHash, out string passwordSalt);
 
             var user = new Employe
@@ -75,47 +74,60 @@ namespace MultiServices.Controllers
                 PasswordHash = passwordHash,
                 PasswordSalt = passwordSalt,
                 Description = employeRegisterDto.Description,
-                CategoryId = category.CategoryId
+                CategoryId = category.CategoryId,
             };
 
-            // Gestion du téléchargement de la photo de profil
+            // Handling profile photo upload
             if (employeRegisterDto.ProfilePhoto != null)
             {
-                string profilePhotoPath = Path.Combine("wwwroot/uploads", employeRegisterDto.ProfilePhoto.FileName);
+                // Save file to wwwroot/uploads
+                string fileName = Path.GetFileName(employeRegisterDto.ProfilePhoto.FileName);
+                string profilePhotoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+
                 using (var stream = new FileStream(profilePhotoPath, FileMode.Create))
                 {
                     await employeRegisterDto.ProfilePhoto.CopyToAsync(stream);
                 }
-                user.ProfilePhotoUrl = profilePhotoPath;
+
+                // Store public URL (without 'wwwroot')
+                user.ProfilePhotoUrl = Path.Combine("/uploads", fileName).Replace("\\", "/");
             }
 
-            // Gestion du téléchargement des photos de travail
+            // Handling work photos upload
             if (employeRegisterDto.WorkPhotos != null && employeRegisterDto.WorkPhotos.Count > 0)
             {
                 user.PhotoUrls = new List<string>();
                 foreach (var photo in employeRegisterDto.WorkPhotos)
                 {
-                    string photoPath = Path.Combine("wwwroot/uploads", photo.FileName);
+                    string fileName = Path.GetFileName(photo.FileName);
+                    string photoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+
                     using (var stream = new FileStream(photoPath, FileMode.Create))
                     {
                         await photo.CopyToAsync(stream);
                     }
-                    user.PhotoUrls.Add(photoPath);
+
+                    // Store public URL
+                    user.PhotoUrls.Add(Path.Combine("/uploads", fileName).Replace("\\", "/"));
                 }
             }
 
-            // Gestion du téléchargement des vidéos de travail
+            // Handling work videos upload
             if (employeRegisterDto.WorkVideos != null && employeRegisterDto.WorkVideos.Count > 0)
             {
                 user.VideoUrls = new List<string>();
                 foreach (var video in employeRegisterDto.WorkVideos)
                 {
-                    string videoPath = Path.Combine("wwwroot/uploads", video.FileName);
+                    string fileName = Path.GetFileName(video.FileName);
+                    string videoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+
                     using (var stream = new FileStream(videoPath, FileMode.Create))
                     {
                         await video.CopyToAsync(stream);
                     }
-                    user.VideoUrls.Add(videoPath);
+
+                    // Store public URL
+                    user.VideoUrls.Add(Path.Combine("/uploads", fileName).Replace("\\", "/"));
                 }
             }
 
@@ -124,7 +136,6 @@ namespace MultiServices.Controllers
 
             return Ok(new { user.EmployeId, user.EmployeName });
         }
-
 
 
         // Spécifie que cette méthode répond aux requêtes POST à api/Users/login.
@@ -138,7 +149,7 @@ namespace MultiServices.Controllers
             if (!VerifyPasswordHash(request.Password, user.PasswordHash, user.PasswordSalt))
                 return Unauthorized("Invalid username or password.");
             // Vérifiez ici les valeurs renvoyées pour s'assurer qu'elles ne sont pas nulles ou vides
-                return Ok(user);
+            return Ok(user);
         }
 
         private bool VerifyPasswordHash(string password, string storedHash, string storedSalt)
@@ -164,5 +175,78 @@ namespace MultiServices.Controllers
         {
             return await _context.Employees.AnyAsync(u => u.EmployeName == username);
         }
+
+        [HttpPut("editprofile")]
+        public async Task<IActionResult> UpdateProfile([FromForm] EmployeUpdateDto employeUpdateDto)
+        {
+            var user = await _context.Employees.FirstOrDefaultAsync(u => u.EmployeName == employeUpdateDto.EmployeName);
+
+            if (user == null) return NotFound("User not found");
+
+            user.EmployeName = employeUpdateDto.EmployeName;
+            user.Place = employeUpdateDto.Place;
+            user.Description = employeUpdateDto.Description;
+            user.Email = employeUpdateDto.Email;
+            user.Phone = employeUpdateDto.Phone;
+            user.PhotoUrls = employeUpdateDto.PhotoUrls;
+            user.VideoUrls = employeUpdateDto.VideoUrls;
+            // Met à jour le mot de passe si un nouveau est fourni
+            if (!string.IsNullOrEmpty(employeUpdateDto.Password))
+            {
+                CreatePasswordHash(employeUpdateDto.Password, out string passwordHash, out string passwordSalt);
+                user.PasswordHash = passwordHash;
+                user.PasswordSalt = passwordSalt;
+            }
+
+            // Traitement de la photo de profil
+            if (employeUpdateDto.ProfilePhoto != null)
+            {
+                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(employeUpdateDto.ProfilePhoto.FileName);
+                string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+                using (var stream = new FileStream(filePath, FileMode.Create))
+                {
+                    await employeUpdateDto.ProfilePhoto.CopyToAsync(stream);
+                }
+                user.ProfilePhotoUrl = "/uploads/" + fileName;
+            }
+            // Si des photos sont téléchargées, les ajouter
+            if (employeUpdateDto.WorkPhotos != null)
+            {
+                foreach (var photo in employeUpdateDto.WorkPhotos)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(photo.FileName);
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await photo.CopyToAsync(stream);
+                    }
+                    user.PhotoUrls.Add("/uploads/" + fileName); // Ajoute la nouvelle photo
+                }
+            }
+
+            // Si des vidéos sont téléchargées, les ajouter
+            if (employeUpdateDto.WorkVideos != null)
+            {
+                foreach (var video in employeUpdateDto.WorkVideos)
+                {
+                    string fileName = Guid.NewGuid().ToString() + Path.GetExtension(video.FileName);
+                    string filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
+                    using (var stream = new FileStream(filePath, FileMode.Create))
+                    {
+                        await video.CopyToAsync(stream);
+                    }
+                    user.VideoUrls.Add("/uploads/" + fileName); // Ajoute la nouvelle vidéo
+                }
+            }
+
+            // Si vous souhaitez conserver les photos et vidéos existantes,
+            // ne les remplacez pas, seulement ajoutez les nouvelles.
+
+            await _context.SaveChangesAsync();
+            return Ok(user);
+        }
+
+
+
     }
 }

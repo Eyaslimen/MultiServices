@@ -1,47 +1,155 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\Aya.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\0e03d020-2a21-458c-bf55-bdecbb5053a2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\0e03d020-2a21-458c-bf55-bdecbb5053a2.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\260e01a6-d637-464e-a2c1-f95ebd8d07a2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\260e01a6-d637-464e-a2c1-f95ebd8d07a2.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\439ef9fd-bce5-4b70-9c7f-4f8a2c16d248.png",
+      "PackagePath": "staticwebassets\\uploads\\439ef9fd-bce5-4b70-9c7f-4f8a2c16d248.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\4b0950c1-36d1-4e04-bd81-d672c9f09fb5.png",
+      "PackagePath": "staticwebassets\\uploads\\4b0950c1-36d1-4e04-bd81-d672c9f09fb5.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\4baf6b2c-1aa1-47d2-8aa6-7daef2c804ff.jpg",
+      "PackagePath": "staticwebassets\\uploads\\4baf6b2c-1aa1-47d2-8aa6-7daef2c804ff.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\5d59a15a-ea9d-4614-8702-93a6951bb097.png",
+      "PackagePath": "staticwebassets\\uploads\\5d59a15a-ea9d-4614-8702-93a6951bb097.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\962ea5d2-4c77-4054-a7e2-ef7dbbc24643.png",
+      "PackagePath": "staticwebassets\\uploads\\962ea5d2-4c77-4054-a7e2-ef7dbbc24643.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Aya.png",
       "PackagePath": "staticwebassets\\uploads\\Aya.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\aya.jpg",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-02-08 223609.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-02-08 223609.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163129.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163129.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163154.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163154.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163232.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163232.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163533.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163533.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\ML_courses.png",
+      "PackagePath": "staticwebassets\\uploads\\ML_courses.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Soudeur.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Soudeur.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Untitled video - Made with Clipchamp.mp4",
+      "PackagePath": "staticwebassets\\uploads\\Untitled video - Made with Clipchamp.mp4"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\aya (2).jpg",
+      "PackagePath": "staticwebassets\\uploads\\aya (2).jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\aya.jpg",
       "PackagePath": "staticwebassets\\uploads\\aya.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ayasl.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\ayasl.png",
       "PackagePath": "staticwebassets\\uploads\\ayasl.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\eyaslimen.jpg",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\b2f65719-3736-4333-8b7d-8781cac1c33e.png",
+      "PackagePath": "staticwebassets\\uploads\\b2f65719-3736-4333-8b7d-8781cac1c33e.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\best_worker1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\best_worker1.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\d030ccb5-dd64-4670-8bd9-d3c7cb2b6ce2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d030ccb5-dd64-4670-8bd9-d3c7cb2b6ce2.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\da68827f-8bb5-45ce-af6f-4667bd4042db.png",
+      "PackagePath": "staticwebassets\\uploads\\da68827f-8bb5-45ce-af6f-4667bd4042db.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\daf4bb65-4681-4f88-8e94-b065953c1a4a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\daf4bb65-4681-4f88-8e94-b065953c1a4a.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\dd8ad85b-778f-4d05-bb7c-ee2a9b6ef1bc.png",
+      "PackagePath": "staticwebassets\\uploads\\dd8ad85b-778f-4d05-bb7c-ee2a9b6ef1bc.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\eyaslimen.jpg",
       "PackagePath": "staticwebassets\\uploads\\eyaslimen.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\iaa.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\f01e5865-2832-421a-a118-9682c63ef203.png",
+      "PackagePath": "staticwebassets\\uploads\\f01e5865-2832-421a-a118-9682c63ef203.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\f16abd99-f95e-4d8c-9109-af723aa400f0.png",
+      "PackagePath": "staticwebassets\\uploads\\f16abd99-f95e-4d8c-9109-af723aa400f0.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\iaa.png",
       "PackagePath": "staticwebassets\\uploads\\iaa.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing3500.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\ing3500.png",
       "PackagePath": "staticwebassets\\uploads\\ing3500.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing3500_2.jpg",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\ing3500_2.jpg",
       "PackagePath": "staticwebassets\\uploads\\ing3500_2.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\ing5000.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\ing5000.png",
       "PackagePath": "staticwebassets\\uploads\\ing5000.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\logoo.png",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\logoo.png",
       "PackagePath": "staticwebassets\\uploads\\logoo.png"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\m.jpg",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\m.jpg",
       "PackagePath": "staticwebassets\\uploads\\m.jpg"
     },
     {
-      "Id": "C:\\Users\\LENOVO\\source\\repos\\Multiservices\\wwwroot\\uploads\\telnetLogo.jpg",
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\mouha 1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\mouha 1.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\soudeur (1).jpg",
+      "PackagePath": "staticwebassets\\uploads\\soudeur (1).jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\soudeur2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\soudeur2.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\telnetLogo.jpg",
       "PackagePath": "staticwebassets\\uploads\\telnetLogo.jpg"
     },
     {

@@ -9,6 +9,8 @@ import { ProfileComponent } from './profile-page/profile/profile.component';
 import { ReviewsComponent } from './profile-page/reviews/reviews.component';
 import { ImagesComponent } from './profile-page/images/images.component';
 import { VideosComponent } from './profile-page/videos/videos.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 
 export const routes: Routes = [
     {
@@ -28,7 +30,7 @@ export const routes: Routes = [
         component:LoginComponent
     },
     {
-        path:'aide',
+        path:'register',
         component:RegisterComponent
     },
     {
@@ -36,7 +38,11 @@ export const routes: Routes = [
         component:BestServicesComponent
     },
     {
-        path: 'profile-page',
+        path:'editProfile',
+        component:ProfileEditComponent
+    },
+    {
+        path: 'userprofile',
         component: ProfilePageComponent,
         children: [
           { path: 'profile', component: ProfileComponent },
