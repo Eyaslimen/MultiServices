@@ -47,12 +47,21 @@ namespace MultiServices.Controllers
                         Post = e.Post,
                         ProfilePhotoUrl = e.ProfilePhotoUrl,
                         Description = e.Description,
-                        PhotoUrls = e.PhotoUrls, 
-                        VideoUrls = e.VideoUrls  
+                        PhotoUrls = e.PhotoUrls,
+                        VideoUrls = e.VideoUrls 
                     }).ToList()
                 }).ToListAsync();
 
             return Ok(categories);
+        }
+
+        [HttpGet("{categoryId}/employees")]
+        public IActionResult GetProductsByCategory(int categoryId)
+        {
+            // acceder au produits d'une categorie bien précis
+            var Employees = _context.Employees.Where(e => e.CategoryId == categoryId);
+            // filter by price
+            return Ok(Employees.ToList());
         }
 
     }

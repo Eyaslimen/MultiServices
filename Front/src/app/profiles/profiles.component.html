@@ -1,1 +1,22 @@
-<p>profiles works!</p>
+<div>
+    <h3>Catégories</h3>
+    <ul>
+      <li *ngFor="let category of categories" (click)="onCategorySelected(category.categoryId)">
+        {{ category.name }}
+        {{ category.categoryId }}
+      </li>
+    </ul>
+    
+    <div *ngIf="employees.length > 0">
+      <h3>Employés de la catégorie sélectionnée</h3>
+      <div class="employecart">
+      <ul>
+        <li *ngFor="let employee of employees">
+          <h4>{{ employee.employeName }}</h4>
+          <p>{{ employee.description }}</p>
+          <img [src]="'http://localhost:5239/' + employee.profilePhotoUrl"  alt="Photo de profil" />
+        </li>
+      </ul>
+    </div> 
+</div>
+  </div>

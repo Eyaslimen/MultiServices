@@ -5,25 +5,38 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class ParcoursProfilesService {
-  private baseUrl = 'http://localhost:5239/api/Employe';
+  private baseUrl = 'http://localhost:5239/api/Category';
   constructor(private http: HttpClient) { }
   getCategories(): Observable<Category[]> {
-    return this.http.get<Category[]>(`${this.baseUrl}/categories`);
+    return this.http.get<Category[]>(`${this.baseUrl}`);
   }
-  getProductsByCategory(categoryId: number): Observable<Employe[]> {
-    return this.http.get<Employe[]>(`${this.baseUrl}/categories/${categoryId}/products`);
+   getProfilesByCategory(categoryId: number): Observable<any> {
+    return this.http.get(`${this.baseUrl}/${categoryId}/employees`);
   }
 }
 //pour definir notre data
 export interface Category {
-  id: number;
+  categoryId: number;
   name: string;
-}
+} 
 //pour definir notre data
 export interface Employe {
-  id: number;
-  name: string;
-  price: number;
-  imageUrl: string;
+  employeName: string;
+  email: string;
+  phone: string;
+  post: string;
+  place: string;
+  password: string;
+  profilePhotoUrl?: string;  // URL pour la photo de profil
   description: string;
+  categoryName: string;
+  reviews: ReviewDto[];      // Liste des avis (à définir)
+  photoUrls?: string[];      // Liste des URLs des photos de travail
+  videoUrls?: string[];      // Liste des URLs des vidéos de travail
+}
+
+export interface ReviewDto {
+  rating: number;
+  comment: string;
+  reviewerName: string;
 }
