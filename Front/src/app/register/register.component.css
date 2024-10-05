@@ -1,114 +1,87 @@
-/* Style global */
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f0f4f8;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+/* Centrer le formulaire sur la page */
+.formulaire {
+  display: block;
 }
-
+h1 {
+  margin-left: 40%;
+  color: #075b61;
+}
+.ligne {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  gap: 10%;
+}
 form {
-  max-width: 500px;
-  width: 100%;
-  padding: 30px;
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  padding-left: 30%;
+  max-width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
-form:hover {
-  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.2);
-}
-
-label {
-  font-size: 14px;
-  font-weight: 600;
+/* Styles généraux pour les labels */
+form label {
+  font-weight: bold;
   color: #333;
   margin-bottom: 5px;
   display: block;
+  font-size: 14px;
+  margin-left: 5%;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="password"],
-input[type="file"],
-textarea {
-  width: 100%;
-  padding: 12px 15px;
-  margin-bottom: 20px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-sizing: border-box;
-  font-size: 15px;
-  background-color: #f9f9f9;
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-input:focus,
-textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+/* Styles généraux pour les champs d'entrée */
+form input, form textarea, form select {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
   background-color: #fff;
-  outline: none;
 }
 
-textarea {
+/* Styles pour le textarea */
+form textarea {
   resize: vertical;
-  height: 120px;
+  min-height: 100px;
 }
 
-button[type="submit"] {
+/* Bouton de soumission */
+form button[type="submit"] {
   width: 100%;
-  padding: 12px 0;
-  background-color: #28a745;
+  padding: 10px;
+  background-color: #075b61;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 5px;
   font-size: 16px;
-  font-weight: 600;
-  text-transform: uppercase;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease;
 }
 
-button[type="submit"]:hover {
-  background-color: #218838;
-  transform: translateY(-2px);
+form button[type="submit"]:hover {
+  background-color:#033437;
 }
 
-/* Style des fichiers */
-input[type="file"] {
-  padding: 5px;
-  border: none;
+/* Espacement entre les champs */
+form input[type="file"] {
+  margin-bottom: 15px;
 }
 
-/* Ajouter des bordures subtiles pour les catégories de fichiers */
-input[type="file"] {
-  background-color: #f0f4f8;
-  padding: 10px;
-  border-radius: 8px;
-  border: 2px dashed #bbb;
-  font-size: 14px;
-  color: #666;
-  cursor: pointer;
+/* Ajouter un focus stylé pour les champs d'entrée */
+form input:focus, form textarea:focus, form select:focus {
+  outline: none;
+  border-color: #075b61;
+  box-shadow: 0 0 5px #135257;
 }
 
-/* Animation subtile sur hover */
-input[type="file"]:hover {
-  border-color: #007bff;
-}
-
-/* Pour un formulaire plus responsif */
-@media (max-width: 768px) {
+/* Styles pour rendre les éléments responsives */
+@media (max-width: 600px) {
   form {
-      padding: 20px;
+    width: 100%;
+    padding: 15px;
   }
 
-  button[type="submit"] {
-      padding: 10px;
+  form button[type="submit"] {
+    font-size: 14px;
   }
 }

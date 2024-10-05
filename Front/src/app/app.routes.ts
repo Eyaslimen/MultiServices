@@ -1,6 +1,5 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { SignupComponent } from './signup/signup.component';
 import { RegisterComponent } from './register/register.component';
 import { BestServicesComponent } from './best-services/best-services.component';
 import { LoginComponent } from './login/login.component';
@@ -22,10 +21,7 @@ export const routes: Routes = [
             path:'home',
             component:HomeComponent  
     },
-    {
-        path:'signup',
-        component:SignupComponent
-    },
+       
     {
         path:'login',
         component:LoginComponent
@@ -57,4 +53,15 @@ export const routes: Routes = [
           { path: '', redirectTo: 'profile', pathMatch: 'full' } // Redirection par défaut
         ]
       },
+      {
+        path: 'employees/:id',  // Route dynamique pour accéder aux détails d'un employé par son ID
+        component: ProfilePageComponent,  // Réutilisation du même composant
+        children: [
+          { path: 'profile', component: ProfileComponent },
+          { path: 'reviews', component: ReviewsComponent },
+          { path: 'images', component: ImagesComponent },
+          { path: 'videos', component: VideosComponent },
+          { path: '', redirectTo: 'profile', pathMatch: 'full' }
+        ]
+      }
 ];

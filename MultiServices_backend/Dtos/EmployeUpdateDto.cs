@@ -4,6 +4,7 @@ namespace MultiServices.Dtos
 {
     public class EmployeUpdateDto
     {
+        public int EmployeId { get; set; }
         public string EmployeName { get; set; }
         public string Phone { get; set; }
         public string Place { get; set; }

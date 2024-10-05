@@ -2,6 +2,7 @@ import { Component, EventEmitter, Output } from '@angular/core';
 import { Category, Employe,ParcoursProfilesService } from '../parcours-profiles.service';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-profiles',
@@ -15,12 +16,14 @@ export class ProfilesComponent {
   categories: Category[] = [];
   employees: Employe[] = [];
   selectedCategoryId!: number;
-  constructor(private employeService: ParcoursProfilesService) {}
+  constructor(private employeService: ParcoursProfilesService , private router:Router) {}
 
   ngOnInit(): void {
     this.loadCategories();
   }
-
+  viewEmployeeDetails(employeeId: number): void {
+    this.router.navigate(['/employees', employeeId]);  // Navigue vers la page de l'employé
+  }
   loadCategories(): void {
     this.employeService.getCategories().subscribe(data => {
       this.categories = data;

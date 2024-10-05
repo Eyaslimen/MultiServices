@@ -4,11 +4,13 @@ import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
 import { AuthService } from '../auth.service';
 import { RouterModule } from '@angular/router';
+import { Category, ParcoursProfilesService } from '../parcours-profiles.service';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [FormsModule, RouterLink, RouterOutlet,RouterModule],
+  imports: [FormsModule, RouterLink, RouterOutlet,RouterModule,NgFor],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })
@@ -16,9 +18,17 @@ export class RegisterComponent {
   profilePhoto: File | null = null;
   workPhotos: File[] = [];
   workVideos: File[] = [];
+  categories: Category[] = [];  // Tableau pour stocker les catégories
+  selectedCategoryName: string = '';  // Nom de la catégorie sélectionnée
 
-  constructor(private authService: AuthService, private router: Router) {}
 
+  constructor(private authService: AuthService, private router: Router, private service: ParcoursProfilesService) {}
+  ngOnInit(): void {
+    // Récupérer les catégories du backend
+    this.service.getCategories().subscribe(data => {
+      this.categories = data;
+    });
+  }
   handleProfilePhotoInput(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input && input.files && input.files.length > 0) {
@@ -50,8 +60,8 @@ export class RegisterComponent {
       formData.append('Place', form.value.place);
       formData.append('Password', form.value.password);
       formData.append('Description', form.value.description);
-      formData.append('CategoryName', form.value.categoryName);
-
+      console.log(this.selectedCategoryName);
+      formData.append('CategoryName', this.selectedCategoryName);
       if (this.profilePhoto) {
         formData.append('ProfilePhoto', this.profilePhoto, this.profilePhoto.name);
       }

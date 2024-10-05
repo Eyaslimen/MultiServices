@@ -1,34 +1,33 @@
 <!-- je trouve un probleme pour conserver le couleur du button cliquer avec un autre couleur , donc on utilise ngClass qui va ajouter au button le class active si on clique a ce button ( ngclass ajoute au button le class active si et seulement currentTab est de ce button , donc on cliquons le button , current tab sera avec le nom de ce button et puis le classe active est associé a ce button ce qui menet donc a ajouter le backgroound color) -->
 <div class="profile-navbar">
-    <button 
-      [ngClass]="{'active': currentTab === 'profile'}" 
-      (click)="selectTab('profile')" 
-      routerLink="profile">
-      Profile
-    </button>
-  
-    <button 
-      [ngClass]="{'active': currentTab === 'images'}" 
-      (click)="selectTab('images')" 
-      routerLink="images">
-      Images
-    </button>
-  
-    <button 
-      [ngClass]="{'active': currentTab === 'videos'}" 
-      (click)="selectTab('videos')" 
-      routerLink="videos">
-      Vidéos
-    </button>
-  
-    <button 
-      [ngClass]="{'active': currentTab === 'reviews'}" 
-      (click)="selectTab('reviews')" 
-      routerLink="reviews">
-      Avis
-    </button>
-  </div>
-  <div class="profile-content">
-    <router-outlet></router-outlet>
-  </div>
-  
+  <button 
+    [ngClass]="{'active': currentTab === 'profile'}" 
+    (click)="selectTab('profile')" 
+    routerLink="profile">
+    Profile
+  </button>
+
+  <button 
+    [ngClass]="{'active': currentTab === 'images'}" 
+    (click)="selectTab('images')" 
+    routerLink="images">
+    Images
+  </button>
+
+  <button 
+    [ngClass]="{'active': currentTab === 'videos'}" 
+    (click)="selectTab('videos')" 
+    routerLink="videos">
+    Vidéos
+  </button>
+
+  <button 
+    [ngClass]="{'active': currentTab === 'reviews'}" 
+    (click)="selectTab('reviews')" 
+    routerLink="reviews">
+    Avis
+  </button>
+</div>
+<div class="profile-content">
+  <router-outlet></router-outlet>
+</div>

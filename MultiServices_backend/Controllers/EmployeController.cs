@@ -50,6 +50,7 @@ namespace MultiServices.Controllers
             return Ok(employes);
         }
 
+
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] EmployeDto employeRegisterDto)
         {
@@ -137,7 +138,6 @@ namespace MultiServices.Controllers
             return Ok(new { user.EmployeId, user.EmployeName });
         }
 
-
         // Spécifie que cette méthode répond aux requêtes POST à api/Users/login.
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDto request)
@@ -175,6 +175,16 @@ namespace MultiServices.Controllers
         {
             return await _context.Employees.AnyAsync(u => u.EmployeName == username);
         }
+
+        // get employe by id : 
+        [HttpGet("id")]
+        public async Task<ActionResult<EmployeDto>> GetEmploye(int id)
+        {
+            var Employe = _context.Employees.Where(e => e.EmployeId == id);
+            return Ok(Employe);
+        }
+
+
 
         [HttpPut("editprofile")]
         public async Task<IActionResult> UpdateProfile([FromForm] EmployeUpdateDto employeUpdateDto)

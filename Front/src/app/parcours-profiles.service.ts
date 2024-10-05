@@ -6,12 +6,17 @@ import { Observable } from 'rxjs';
 })
 export class ParcoursProfilesService {
   private baseUrl = 'http://localhost:5239/api/Category';
+  private apiUrl = 'http://localhost:5239/api/Employe';
+
   constructor(private http: HttpClient) { }
   getCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(`${this.baseUrl}`);
   }
    getProfilesByCategory(categoryId: number): Observable<any> {
     return this.http.get(`${this.baseUrl}/${categoryId}/employees`);
+  }
+  getEmployeById(id: number): Observable<Employe> {
+    return this.http.get<Employe>(`${this.apiUrl}/id?id=${id}`);
   }
 }
 //pour definir notre data
@@ -21,6 +26,7 @@ export interface Category {
 } 
 //pour definir notre data
 export interface Employe {
+  employeId:number;
   employeName: string;
   email: string;
   phone: string;

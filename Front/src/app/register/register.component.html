@@ -1,36 +1,48 @@
 <form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
-    <label for="username">Username</label> <br>
-    <input id="username" name="username" ngModel required> <br>
-  
-    <label for="email">Email</label> <br>
-    <input id="email" name="email" ngModel required email> <br>
-  
-    <label for="phone">Phone</label> 
-    <input id="phone" name="phone" ngModel required> <br>
-    
-    <label for="post">Post</label> <br>
-    <input id="post" name="post" ngModel required> <br>
-    
-    <label for="place">Place</label>
-    <input id="place" name="place" ngModel required> <br>
-    
-    <label for="password">Password</label>
-    <input id="password" name="password" ngModel type="password" required> <br>
-  
-    <label for="description">Description</label>
-    <textarea id="description" name="description" ngModel></textarea> <br>
-    
-    <label for="categoryName">Category Name</label>
-    <input id="categoryName" name="categoryName" ngModel required> <br>
-    
-    <label for="profilePhoto">Profile Photo</label>
-    <input id="profilePhoto" type="file" (change)="handleProfilePhotoInput($event)"> <br>
-  
-    <label for="workPhotos">Work Photos</label>
-    <input id="workPhotos" type="file" (change)="handleWorkPhotosInput($event)" multiple> <br>
-    
-    <label for="workVideos">Work Videos</label>
-    <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
-  
-    <button type="submit">Register</button>
-  </form>
+  <div class="formulaire">
+    <h1 >S'inscrire</h1>
+    <div class="forms">
+  <div class="ligne">
+  <div><label for="username">Username</label> <br>
+  <input id="username" name="username" ngModel required> <br> </div>
+  <div><label for="email">Email</label> <br>
+  <input id="email" name="email" ngModel required email> <br> </div>
+</div>
+<div class="ligne">
+  <div><label for="phone">Phone</label> <br>
+  <input id="phone" name="phone" ngModel required> <br> </div>
+  <div><label for="post">Post</label> <br>
+ <input id="post" name="post" ngModel required> <br> </div>
+</div>
+<div class="ligne">
+  <div><label for="place">Place</label>
+  <input id="place" name="place" ngModel required> <br> </div>
+    <!-- Menu déroulant pour choisir la catégorie -->
+  <div><label for="categoryName">Category Name</label>
+    <select id="categoryName" name="categoryName" [(ngModel)]="selectedCategoryName" required>
+      <option *ngFor="let category of categories" [value]="category.name">
+        {{ category.name }}
+      </option>
+    </select> </div>
+  </div>
+  <div class="ligne">
+    <div>
+  <label for="password">Mot de passe :</label>
+  <input id="password" name="password" ngModel type="password" required> <br> </div>
+  <div><label>Verifié mot de passe :</label>
+  <input id="password" type="password" > <br> </div>
+</div>
+  <label for="description">Description</label>
+  <textarea id="description" name="description" ngModel></textarea> <br>
+
+  <label for="profilePhoto">Profile Photo</label>
+  <input id="profilePhoto" type="file" (change)="handleProfilePhotoInput($event)"> <br>
+
+  <label for="workPhotos">Work Photos</label>
+  <input id="workPhotos" type="file" (change)="handleWorkPhotosInput($event)" multiple> <br>
+
+  <label for="workVideos">Work Videos</label>
+  <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
+  </div> </div>
+<button type="submit">Register</button>
+</form>
