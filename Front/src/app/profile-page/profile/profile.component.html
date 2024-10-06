@@ -27,8 +27,8 @@
             <p> {{ currentUser.description }}</p>
         </div>
         <div class="buttons">
-        <button *ngIf="isCurrentUser" style="background-color: green;" routerLink="/editProfile">Modifier Profile</button>
-        <button *ngIf="isCurrentUser"  style="background-color: rgb(90, 88, 88);" (click)="logout()">Déconnexion</button>
+        <button *ngIf="isCurrentUser" style="background-color: green;" routerLink="/editProfile">Modifier le Profile</button>
+        <button *ngIf="isCurrentUser"  style="background-color: red;" (click)="logout()">Déconnexion</button>
     </div>
     </div>
 </div>
