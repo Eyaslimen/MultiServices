@@ -13,5 +13,5 @@ button {
 
 button.active {
     background-color: #075b61;
-    color: black; /* Modifie les couleurs comme tu veux */
+    color: white; 
 }

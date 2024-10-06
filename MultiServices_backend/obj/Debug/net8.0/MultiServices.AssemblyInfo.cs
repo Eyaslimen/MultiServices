@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MultiServices")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6368e14af69973fc76e461694811a12919af5c80")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d4232bd43521dac29b0bf9e4dc8493291cc256f5")]
 [assembly: System.Reflection.AssemblyProductAttribute("MultiServices")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MultiServices")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

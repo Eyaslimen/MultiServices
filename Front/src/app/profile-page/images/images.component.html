@@ -1,6 +1,7 @@
 <div class="workImages">
 <h3>Images</h3>
+<p *ngIf="!currentUser.photoUrls">Y a pas encore des photos !</p>
 <div  class="images" *ngIf="currentUser.photoUrls && currentUser.photoUrls.length > 0">
-  <img *ngFor="let photo of currentUser.photoUrls" [src]="'http://localhost:5239/' + photo" alt="Work Photo" class="work-photo">
-</div> 
+  <img *ngFor="let photo of currentUser.photoUrls" [src]="'http://localhost:5239/' + photo" alt="Work Photo">
+</div>
 </div>

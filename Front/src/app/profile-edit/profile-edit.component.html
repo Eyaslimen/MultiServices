@@ -22,22 +22,26 @@
   <input id="phone" name="phone" ngModel [(ngModel)]="user.phone"> <br> </div>
   </div>
 
-  <h4>Profile Photo</h4>
+  <h4>Modifier Photo de profile</h4>
   <input id="profilePhoto" type="file" (change)="handleProfilePhotoInput($event)" accept="image/*"> <br>
   <br>
-  <h4>Photos</h4>
+  <h4>Ajouter des photos</h4>
   <input id="workPhotos" type="file" (change)="handleWorkPhotosInput($event)" multiple> <br>
-  <div class="delete" *ngFor="let photo of user.photoUrls; let i = index">
-    <img [src]="'http://localhost:5239/' + photo" alt="work photo" width="100">
-    <button type="button" (click)="removePhoto(i)">Remove</button>
-  </div>
+  <h4>Supprimer des photos</h4>
+  <div class="imgvid">
+  <div *ngFor="let photo of user.photoUrls; let i = index">
+    <div class="delete"><img [src]="'http://localhost:5239/' + photo" alt="work photo" width="100">
+    <i class="fa-solid fa-trash" (click)="removePhoto(i)"></i></div>
+  </div> </div>
 
-  <h4>Videos</h4>
+  <h4> Ajouter des videos</h4>
   <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
-  <div class="delete" *ngFor="let video of user.videoUrls; let i = index">
-    <video [src]="'http://localhost:5239/' + video" controls width="200"></video>
-    <i class="fa-solid fa-trash" (click)="removeVideo(i)"></i>
-  </div>
+  <h4>Supprimer des videos</h4>
+  <div class="imgvid">
+  <div *ngFor="let video of user.videoUrls; let i = index">
+    <div class="delete"><video [src]="'http://localhost:5239/' + video" controls width="200"></video>
+    <i class="fa-solid fa-trash" (click)="removeVideo(i)"></i> </div>
+  </div> </div>
   </div>
   <div class="buttons">
     <button type="submit" style="background-color: green;">Modifier</button>
