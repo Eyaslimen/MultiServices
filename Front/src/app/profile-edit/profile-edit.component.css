@@ -4,7 +4,7 @@
   }
   h1 {
     margin-left: 40%;
-    color: #075b61;
+    color: #333;
   }
   .ligne {
     display: grid;
@@ -40,7 +40,6 @@
   }
 .delete {
     height: 20%;
-    border: 3px solid;
     width: 30%;
     display: grid;
     grid-template-columns: 60% 40%;
@@ -49,17 +48,28 @@
     height: 100px;
     width: 100%;
 }
-.delete > button{
+.delete > i{
+    padding: 6px;
+    text-align: center;
+    border-radius: 100%;
+    background-color: red;
+    cursor: pointer;
+    color: white;
     margin-left: 10%;
     height: 20%;
-    background-color: red;
+    width: 20%;
     margin-top: 30%;
   }
   /* Bouton de soumission */
+  .buttons {
+    margin-top: 5%;
+    display: grid;
+    width: 30%;
+    grid-template-columns: 50% 50%;
+  }
   form button[type="submit"] {
-    width: 100%;
+    width:90%;
     padding: 10px;
-    background-color: green;
     color: white;
     border: none;
     border-radius: 5px;

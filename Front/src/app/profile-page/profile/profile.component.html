@@ -2,7 +2,7 @@
     
     <div class="image">
         <img [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}"> 
-        <p>{{ currentUser.employeName }}</p>
+        <p class="name">{{ currentUser.employeName }}</p>
     </div>
     <div class="infos">
         <div class="poste">
@@ -27,8 +27,8 @@
             <p> {{ currentUser.description }}</p>
         </div>
         <div class="buttons">
-        <button *ngIf="isCurrentUser" style="background-color: green;" routerLink="/editProfile">Modifier le Profile</button>
-        <button *ngIf="isCurrentUser"  style="background-color: red;" (click)="logout()">Déconnexion</button>
+        <button *ngIf="isCurrentUser" style="background-color: #075b61;" routerLink="/editProfile">Modifier le Profile</button>
+        <button *ngIf="isCurrentUser"  style="background-color: #333333a8;" (click)="logout()">Déconnexion</button>
     </div>
     </div>
 </div>

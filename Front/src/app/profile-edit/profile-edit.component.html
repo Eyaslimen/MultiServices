@@ -36,8 +36,11 @@
   <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
   <div class="delete" *ngFor="let video of user.videoUrls; let i = index">
     <video [src]="'http://localhost:5239/' + video" controls width="200"></video>
-    <button type="button" (click)="removeVideo(i)">Remove</button>
+    <i class="fa-solid fa-trash" (click)="removeVideo(i)"></i>
   </div>
   </div>
-  <button type="submit">Modifier</button>
+  <div class="buttons">
+    <button type="submit" style="background-color: green;">Modifier</button>
+    <button type="submit" click="annuler()" style="background-color: red;">Annuler</button>
+  </div>
 </form>

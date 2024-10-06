@@ -6,6 +6,9 @@
     grid-template-columns: 25% 75%;
     gap: 2%;
 }
+.name {
+  font-weight: 1000;
+}
 .image {
     border-radius: 3px;
     padding: 10px;
@@ -24,7 +27,7 @@ img {
     border-radius: 3px;
     border: 1px solid rgba(0, 0, 0, 0.523);
     padding: 10px;
-    background-color: #f0fdf7;
+    background-color: #075b610f;
   }
 
 .buttons {
@@ -37,6 +40,6 @@ button {
     margin-left: 10%;
     border: none;
     padding: 5px;
-    font-weight: 200;
+    font-weight: 500;
     cursor: pointer;
-  }
+}

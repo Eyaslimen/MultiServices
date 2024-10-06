@@ -66,7 +66,9 @@ import { NgFor } from '@angular/common';
       removeVideo(index: number) {
         this.user.videoUrls.splice(index, 1); // Supprimer une vidéo existante
       }
-
+     annuler() {
+      this.router.navigate(['/userprofile/profile']); 
+     }
       onSubmit(form: any) {
         if (form.valid) {
           console.log(this.user.photoUrls);
