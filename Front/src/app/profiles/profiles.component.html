@@ -1,25 +1,36 @@
-<div>
-    <h3>Catégories</h3>
-    <ul>
+<div class="profilesPage">
+<div class="part1">
+  <h1 style="color: aliceblue;">Trouver l'expert idéal pour votre besoin</h1>
+  <div class="search-form">
+    <div class="search-form-content">
+      <div class="s1"><input type="text" id="profile"  style="width: 100%;" placeholder="Rechercher.."></div>
+      <div class="s2"><button (click)="onSearchClick()">Rechercher</button></div>
+    </div>
+  </div> 
+</div>
+
+<div class="part2">
+
+    <div class="categories">
+      <h3 style="color: #58ffb9;">Services disponibles</h3>
+      <ul>
       <li *ngFor="let category of categories" (click)="onCategorySelected(category.categoryId)">
         {{ category.name }}
-        {{ category.categoryId }}
       </li>
-    </ul>
-    
-    <div *ngIf="employees.length > 0">
-      <h3>Employés de la catégorie sélectionnée</h3>
-      <div class="employecart">
-      <ul>
-        <li *ngFor="let employee of employees">
-          <h4>{{ employee.employeName }}</h4>
-          <p>{{ employee.description }}</p>
-          <p>{{ employee.employeId }}</p>
-          <button (click)="viewEmployeeDetails(employee.employeId)">Voir détails</button>
-          <button>SEE More</button>
-        </li>
       </ul>
     </div>
-    </div>
 
+    <div class="employes_service">
+        <div  class="employes" >
+          <div class="worker" *ngFor="let employee of employees">
+            <img [src]="'http://localhost:5239/' + employee.profilePhotoUrl" alt="work photo" width="100">
+            <h2>{{ employee.employeName }}</h2>
+            <p>{{ employee.post }}</p>
+            <p><i class="fas fa-map-marker-alt" style="margin-right: 10px;color: grey;" ></i>{{ employee.place }}</p>
+           <button class="buttonn" (click)="viewEmployeeDetails(employee.employeId)"><i class="fa fa-eye" style="margin-right: 5px;color: black"></i>Voir détails</button>
+          </div>
+        </div>
+    </div>
   </div>
+
+</div>

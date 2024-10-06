@@ -27,7 +27,7 @@ export class ProfilesComponent {
   loadCategories(): void {
     this.employeService.getCategories().subscribe(data => {
       this.categories = data;
-      console.log(data);
+      this.onCategorySelected(6);
     });
   }
 
@@ -42,5 +42,8 @@ export class ProfilesComponent {
     this.employeService.getProfilesByCategory(categoryId).subscribe(data => {
       this.employees = data;
     });
+  }
+  onSearchClick() {
+    console.log("search");
   }
 }
