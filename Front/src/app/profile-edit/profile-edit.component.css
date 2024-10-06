@@ -1,0 +1,97 @@
+/* Centrer le formulaire sur la page */
+.formulaire {
+    display: block;
+  }
+  h1 {
+    margin-left: 40%;
+    color: #075b61;
+  }
+  .ligne {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    gap: 10%;
+  }
+  form {
+    padding-left: 30%;
+    max-width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Styles généraux pour les labels */
+  form label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+    font-size: 14px;
+    margin-left: 5%;
+  }
+  
+  /* Styles généraux pour les champs d'entrée */
+  form input, form textarea, form select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #fff;
+  }
+.delete {
+    height: 20%;
+    border: 3px solid;
+    width: 30%;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.delete > img,video {
+    height: 100px;
+    width: 100%;
+}
+.delete > button{
+    margin-left: 10%;
+    height: 20%;
+    background-color: red;
+    margin-top: 30%;
+  }
+  /* Bouton de soumission */
+  form button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #075b61;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button[type="submit"]:hover {
+    background-color:#033437;
+  }
+  
+  /* Espacement entre les champs */
+  form input[type="file"] {
+    margin-bottom: 15px;
+  }
+  
+  /* Ajouter un focus stylé pour les champs d'entrée */
+  form input:focus, form textarea:focus, form select:focus {
+    outline: none;
+    border-color: #075b61;
+    box-shadow: 0 0 5px #135257;
+  }
+  
+  /* Styles pour rendre les éléments responsives */
+  @media (max-width: 600px) {
+    form {
+      width: 100%;
+      padding: 15px;
+    }
+  
+    form button[type="submit"] {
+      font-size: 14px;
+    }
+  }

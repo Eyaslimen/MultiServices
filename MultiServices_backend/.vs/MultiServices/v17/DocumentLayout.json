@@ -91,8 +91,7 @@
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
               "ViewState": "AQIAAKoAAAAAAAAAAADgv7kAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003801|",
-              "WhenOpened": "2024-10-05T11:07:17.941Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-05T11:07:17.941Z"
             },
             {
               "$type": "Document",
@@ -104,8 +103,7 @@
               "RelativeToolTip": "Dtos\\EmployeUpdateDto.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAqwAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T17:46:32.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-02T17:46:32.226Z"
             },
             {
               "$type": "Document",
@@ -117,8 +115,7 @@
               "RelativeToolTip": "Controllers\\CategoryController.cs",
               "ViewState": "AQIAACAAAAAAAAAAAAAgwCwAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:54:49.846Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T14:54:49.846Z"
             },
             {
               "$type": "Document",
@@ -130,8 +127,7 @@
               "RelativeToolTip": "Dtos\\EmployeDto.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:19:47.845Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-25T13:19:47.845Z"
             },
             {
               "$type": "Document",
@@ -141,7 +137,7 @@
               "RelativeDocumentMoniker": "Controllers\\EmployeController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeToolTip": "Controllers\\EmployeController.cs",
-              "ViewState": "AQIAAK8AAAAAAAAAAAAqwLEAAAAAAAAA",
+              "ViewState": "AQIAALcAAAAAAAAAAAAuwMMAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:54:36.353Z",
               "EditorCaption": ""
@@ -192,8 +188,7 @@
               "RelativeToolTip": "Controllers\\ClientController.cs",
               "ViewState": "AQIAAB4AAAAAAAAAAAAYwEEAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:55:36.768Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T14:55:36.768Z"
             },
             {
               "$type": "Document",
@@ -265,8 +260,7 @@
               "RelativeToolTip": "Controllers\\ReviewController.cs",
               "ViewState": "AQIAAAQAAAAAAAAAAAAmwAwAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:55:12.089Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-23T14:55:12.089Z"
             },
             {
               "$type": "Document",

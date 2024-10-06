@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "X2SlUPXxffH+ouaL2ALqVLD1dwk1tgZwjO/qi0M7YXg=",
+  "Hash": "qPDc6GDyukUeYTHAWrLM/oUYPPinRuj/38rS9boyYOA=",
   "Source": "MultiServices",
   "BasePath": "_content/MultiServices",
   "Mode": "Default",
@@ -414,6 +414,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\Capture d’écran 2023-11-29 163533.png"
+    },
+    {
+      "Identity": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163559.png",
+      "SourceId": "MultiServices",
+      "SourceType": "Discovered",
+      "ContentRoot": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\",
+      "BasePath": "_content/MultiServices",
+      "RelativePath": "uploads/Capture d’écran 2023-11-29 163559.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\Capture d’écran 2023-11-29 163559.png"
     },
     {
       "Identity": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\d030ccb5-dd64-4670-8bd9-d3c7cb2b6ce2.jpg",

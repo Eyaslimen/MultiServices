@@ -105,6 +105,7 @@ import { NgFor } from '@angular/common';
           });
 
           this.authService.update(formData).subscribe();
+          this.router.navigate(['/userprofile/profile']); 
         }
       }
     }

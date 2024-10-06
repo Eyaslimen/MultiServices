@@ -1,36 +1,43 @@
 <form #editForm="ngForm" (ngSubmit)="onSubmit(editForm)">
-  <label for="employeName">Username</label> <br>
-  <input id="employeName" name="employeName" ngModel [(ngModel)]="user.employeName" required> <br>
+  <div class="formulaire">
+    <h1 >Modifier le profile</h1>
+  <div class="ligne">
+  <div><label for="employeName">Username</label> <br>
+  <input id="employeName" name="employeName" ngModel [(ngModel)]="user.employeName" required> <br> </div>
+  <div><label for="email">Email</label> <br>
+  <input id="email" name="email" ngModel [(ngModel)]="user.email" readonly> <br> </div>
+  </div>
 
-  <label for="email">Email</label> <br>
-  <input id="email" name="email" ngModel [(ngModel)]="user.email" readonly> <br>
+  <div class="ligne">
+  <div><label for="place">Place</label> <br>
+  <input id="place" name="place" ngModel [(ngModel)]="user.place" required> <br> </div>
+  <div><label for="password">New Password</label> <br>
+  <input id="password" name="password" ngModel [(ngModel)]="user.password" type="password"> <br> </div>
+  </div>
 
-  <label for="place">Place</label> <br>
-  <input id="place" name="place" ngModel [(ngModel)]="user.place" required> <br>
+  <div class="ligne">
+  <div><label for="description">Description</label> <br>
+  <textarea id="description" name="description" ngModel [(ngModel)]="user.description"></textarea> <br></div>
+  <div><label for="phone">Telephone</label> <br>
+  <input id="phone" name="phone" ngModel [(ngModel)]="user.phone"> <br> </div>
+  </div>
 
-  <label for="password">New Password</label> <br>
-  <input id="password" name="password" ngModel [(ngModel)]="user.password" type="password"> <br>
-
-  <label for="description">Description</label> <br>
-  <textarea id="description" name="description" ngModel [(ngModel)]="user.description"></textarea> <br>
-  <label for="phone">Telephone</label> <br>
-  <input id="phone" name="phone" ngModel [(ngModel)]="user.phone"> <br>
   <h4>Profile Photo</h4>
   <input id="profilePhoto" type="file" (change)="handleProfilePhotoInput($event)" accept="image/*"> <br>
   <br>
   <h4>Photos</h4>
   <input id="workPhotos" type="file" (change)="handleWorkPhotosInput($event)" multiple> <br>
-  <div *ngFor="let photo of user.photoUrls; let i = index">
+  <div class="delete" *ngFor="let photo of user.photoUrls; let i = index">
     <img [src]="'http://localhost:5239/' + photo" alt="work photo" width="100">
     <button type="button" (click)="removePhoto(i)">Remove</button>
   </div>
 
   <h4>Videos</h4>
   <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
-  <div *ngFor="let video of user.videoUrls; let i = index">
+  <div class="delete" *ngFor="let video of user.videoUrls; let i = index">
     <video [src]="'http://localhost:5239/' + video" controls width="200"></video>
     <button type="button" (click)="removeVideo(i)">Remove</button>
   </div>
-
-  <button type="submit">Update Profile</button>
+  </div>
+  <button type="submit">Modifier</button>
 </form>
