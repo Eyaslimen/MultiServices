@@ -28,7 +28,7 @@ img {
 
 button {
     font-size: smaller;
-    width: 130px;
+    width: 150px;
     padding: 12px 30px;
     height: 40px;
     border-radius: 50px;
@@ -37,23 +37,18 @@ button {
     background-color: #075b61;
     box-shadow: rgb(0 0 0 / 5%) 0 0 8px;
     transition: all 0.5s ease;
+    margin-bottom: 20px;
   }
   
   button:hover {
-    background-color: #075b61c9;
+    background-color: #05474b;
     color: hsl(0, 0%, 100%);
-    box-shadow: #b2f4d9 0px 7px 29px 0px;
   }
   
   button:active {
     background-color: #b2f4d9;
     color: hsl(0, 0%, 100%);
-    box-shadow: #b2f4d9 0px 0px 0px 0px;
     transform: translateY(10px);
     transition: 100ms;
   }
   
-p {
-    color: gray;
-    font-weight: 100;
-}

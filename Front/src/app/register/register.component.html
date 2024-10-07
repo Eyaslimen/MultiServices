@@ -38,11 +38,13 @@
   <label for="profilePhoto">Profile Photo</label>
   <input id="profilePhoto" type="file" (change)="handleProfilePhotoInput($event)"> <br>
 
-  <label for="workPhotos">Work Photos</label>
+  <label for="workPhotos">Work Photos </label>
+  <p style="color: rgb(128, 128, 128);">Vous pouvez ajouter içi vos certificats , des photos de travail accompli par toi , ou bien n'importe que photo qui met en valeur votre service</p>
   <input id="workPhotos" type="file" (change)="handleWorkPhotosInput($event)" multiple> <br>
 
   <label for="workVideos">Work Videos</label>
   <input id="workVideos" type="file" (change)="handleWorkVideosInput($event)" multiple> <br>
   </div> </div>
 <button type="submit">Register</button>
+<div class="login"><p>Vous avez déja un compte ?</p><a href="http://localhost:4200/login">Se connecter</a></div>
 </form>

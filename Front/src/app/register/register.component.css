@@ -85,3 +85,11 @@ form input:focus, form textarea:focus, form select:focus {
     font-size: 14px;
   }
 }
+.login {
+  display: grid;
+  grid-template-columns: auto auto;
+  width: 30%;
+}
+.login > a {
+  margin-top: 15px;
+}

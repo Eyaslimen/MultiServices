@@ -62,7 +62,7 @@ namespace MultiServices.Controllers
 
             if (category == null)
                 return BadRequest("Category not found");
-
+            
             CreatePasswordHash(employeRegisterDto.Password, out string passwordHash, out string passwordSalt);
 
             var user = new Employe

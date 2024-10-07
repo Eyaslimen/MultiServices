@@ -64,7 +64,14 @@ h1 {
     border-color: #075b61;
     box-shadow: 0 0 5px #135257;
   }
-  
+  .register {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 60%;
+  }
+  .register > a {
+    margin-top: 15px;
+  }
   /* Styles pour rendre les éléments responsives */
   @media (max-width: 600px) {
     form {
