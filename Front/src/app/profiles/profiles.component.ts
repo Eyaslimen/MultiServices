@@ -15,7 +15,10 @@ export class ProfilesComponent {
   @Output() categorySelected = new EventEmitter<number>();
   categories: Category[] = [];
   employees: Employe[] = [];
+  filteredEmployees: Employe[] = [];
   selectedCategoryId!: number;
+  searchTerm: string = '';  // Nouveau champ pour la recherche
+
   constructor(private employeService: ParcoursProfilesService , private router:Router) {}
 
   ngOnInit(): void {
@@ -43,7 +46,14 @@ export class ProfilesComponent {
       this.employees = data;
     });
   }
-  onSearchClick() {
-    console.log("search");
+  onSearchClick(): void {
+    console.log(this.searchTerm);
+    if (this.searchTerm.trim()) {
+      this.filteredEmployees = this.employees.filter(employee =>
+        employee.description.toLowerCase().includes(this.searchTerm.toLowerCase())
+      );
+    } else {
+      this.filteredEmployees = [...this.employees];  // Réinitialise les résultats si la recherche est vide
+    }
   }
 }
