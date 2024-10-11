@@ -3,16 +3,20 @@
   "WorkspaceRootPath": "E:\\MultiServices\\MultiServices_backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\employeupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -36,10 +40,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,11 +81,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Microsoft.NET.GenerateAssemblyInfo.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
@@ -95,7 +95,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "EmployeUpdateDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeUpdateDto.cs",
               "RelativeDocumentMoniker": "Dtos\\EmployeUpdateDto.cs",
@@ -107,19 +107,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AQIAACAAAAAAAAAAAAAgwCwAAAAoAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAAuwEcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:54:49.846Z"
+              "WhenOpened": "2024-08-23T14:54:49.846Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "EmployeDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeDto.cs",
               "RelativeDocumentMoniker": "Dtos\\EmployeDto.cs",
@@ -131,13 +132,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "EmployeController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeDocumentMoniker": "Controllers\\EmployeController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeToolTip": "Controllers\\EmployeController.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAAAEAAAAAMAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAYwDIAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:54:36.353Z",
               "EditorCaption": ""
@@ -156,19 +157,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "Employe.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
               "RelativeDocumentMoniker": "Models\\Employe.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
               "RelativeToolTip": "Models\\Employe.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAQwB8AAAAAAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA9wAcAAAAhAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:33:59.587Z"
+              "WhenOpened": "2024-08-23T14:33:59.587Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -180,7 +182,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ClientController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ClientController.cs",
               "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
@@ -204,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "Category.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -252,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",

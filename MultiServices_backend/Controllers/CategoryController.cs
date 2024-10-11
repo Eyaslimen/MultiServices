@@ -6,6 +6,7 @@ using System.Security.Cryptography;
 using System.Text;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 
 namespace MultiServices.Controllers
 {
@@ -56,11 +57,16 @@ namespace MultiServices.Controllers
         }
 
         [HttpGet("{categoryId}/employees")]
-        public IActionResult GetProductsByCategory(int categoryId)
+        public IActionResult GetProductsByCategory(int categoryId, [FromQuery] string? query)
         {
             // acceder au produits d'une categorie bien précis
             var Employees = _context.Employees.Where(e => e.CategoryId == categoryId);
             // filter by price
+            //search !! 
+            if (!string.IsNullOrEmpty(query))
+            {
+                Employees = Employees.Where(e => e.EmployeName.Contains(query) || e.Description.Contains(query) || e.Place.Contains(query) || e.Post.Contains(query));
+            }
             return Ok(Employees.ToList());
         }
 

@@ -18,6 +18,14 @@ export class ParcoursProfilesService {
   getEmployeById(id: number): Observable<Employe> {
     return this.http.get<Employe>(`${this.apiUrl}/id?id=${id}`);
   }
+  
+  searchemployees(categoryId: number,query: string): Observable<Employe[]> {
+    let params: any = {};
+    if (query !== undefined) {
+      params.query = query;
+    }
+    return this.http.get<Employe[]>(`${this.baseUrl}/${categoryId}/employees`, { params });
+  }
 }
 //pour definir notre data
 export interface Category {
