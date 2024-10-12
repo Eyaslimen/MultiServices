@@ -31,7 +31,6 @@ namespace MultiServices.Data
         }
         public DbSet<Employe> Employees { get; set; }
         public DbSet<Review> Reviews { get; set; }
-        public DbSet<Client> Clients { get; set; }
         public DbSet<Category>  Categories { get; set; }
     }
 }

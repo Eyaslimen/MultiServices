@@ -40,11 +40,9 @@ namespace MultiServices.Controllers
                     VideoUrls = e.VideoUrls,
                     Reviewss = e.Reviews.Select(rv => new ReviewDto
                     {
-                        ClientId = rv.ClientId,
-                        EmloyeId = rv.EmployeId,
+                        authorName=rv.authorName,
                         ReviewComment = rv.ReviewComment,
                         date = rv.date,
-                        Rating = rv.Rating
                     }).ToList()
                 }).ToListAsync();
             return Ok(employes);

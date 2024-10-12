@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using MultiServices.Dtos;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MultiServices.Models
 {
@@ -26,7 +27,7 @@ namespace MultiServices.Models
 
         [NotMapped]
         public List<IFormFile> WorkVideos { get; set; }
-         public List<Review> Reviews { get; set; } = new List<Review>();
+        public List<Review> Reviews { get; set; } = new List<Review>();
         public Category? Category { get; set; }
         public int CategoryId { get; set; }
 

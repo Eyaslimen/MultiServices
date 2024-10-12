@@ -5,6 +5,8 @@ using MultiServices.Data;
 using MultiServices.Models;
 using MultiServices.Dtos;
 using Microsoft.AspNetCore.Http.HttpResults;
+using Microsoft.AspNetCore.Mvc.ActionConstraints;
+using Azure.Core;
 
 namespace MultiServices.Controllers
 {
@@ -18,22 +20,39 @@ namespace MultiServices.Controllers
         {
             _context = context;
         }
-        [HttpPost]
-        public async Task<ActionResult<Category>> PostCategory(ReviewDto ReviewDto)
+        [HttpPost("{id}/reviews")]
+        public async Task<IActionResult> AddReview(int id, [FromBody] ReviewDto reviewDto)
         {
-            int id = ReviewDto.EmloyeId;
-            Employe employe = await _context.FindAsync<Employe>(id);
-            var Review = new Review
+            var employe = await _context.Employees.FirstOrDefaultAsync(e => e.EmployeId == id);
+
+            if (employe == null)
             {
-                ClientId = ReviewDto.ClientId,
-                EmployeId = ReviewDto.EmloyeId,
-                ReviewComment = ReviewDto.ReviewComment,
-                date = ReviewDto.date,
-                Rating = ReviewDto.Rating
+                return NotFound(); // Gérer le cas où l'employé n'existe pas
+            }
+
+            var rev = new Review
+            {
+                authorName = reviewDto.authorName,
+                ReviewComment = reviewDto.ReviewComment,
+                date = DateTime.Now,
             };
-            employe.Reviews.Add(Review);
-            await _context.SaveChangesAsync();
-            return Ok(Review) ;
+            employe.Reviews.Add(rev);
+            _context.SaveChanges();
+            var responseReviewDto = new ReviewDto
+            {
+                authorName = rev.authorName,
+                ReviewComment = rev.ReviewComment,
+                date = rev.date
+            };
+
+            return Ok(responseReviewDto);
         }
+        [HttpGet("{id}/reviews")]
+        public IActionResult GetReviews(int id)
+        {
+            var reviews = _context.Reviews.Where(r => r.EmployeId == id).ToList();
+            return Ok(reviews);
+        }
+
     }
 }

@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "E:\\MultiServices\\MultiServices_backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,8 +27,12 @@
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\employe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\employecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\employedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,18 +46,6 @@
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\clientcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:controllers\\reviewcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -46,28 +54,8 @@
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\userlogindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:data\\multiservicescontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\reviewdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:models\\review.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:dtos\\categorydto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{48A06486-7A4F-4DBF-8129-8326FF3C7583}|MultiServices.csproj|e:\\multiservices\\multiservices_backend\\multiservices.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
@@ -81,11 +69,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Microsoft.NET.GenerateAssemblyInfo.targets",
               "DocumentMoniker": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
               "ToolTip": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\Sdks\\Microsoft.NET.Sdk\\targets\\Microsoft.NET.GenerateAssemblyInfo.targets",
@@ -95,7 +83,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "EmployeUpdateDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeUpdateDto.cs",
               "RelativeDocumentMoniker": "Dtos\\EmployeUpdateDto.cs",
@@ -103,32 +91,34 @@
               "RelativeToolTip": "Dtos\\EmployeUpdateDto.cs",
               "ViewState": "AQIAAAEAAAAAAAAAAAAqwAYAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-02T17:46:32.226Z"
+              "WhenOpened": "2024-10-02T17:46:32.226Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\CategoryController.cs",
               "RelativeToolTip": "Controllers\\CategoryController.cs",
-              "ViewState": "AQIAADYAAAAAAAAAAAAuwEcAAAAAAAAA",
+              "ViewState": "AQIAADIAAAAAAAAAAAAcwC0AAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:54:49.846Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "EmployeDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeDto.cs",
               "RelativeDocumentMoniker": "Dtos\\EmployeDto.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\EmployeDto.cs",
               "RelativeToolTip": "Dtos\\EmployeDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAApAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAvAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-25T13:19:47.845Z"
+              "WhenOpened": "2024-08-25T13:19:47.845Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -138,14 +128,14 @@
               "RelativeDocumentMoniker": "Controllers\\EmployeController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\EmployeController.cs",
               "RelativeToolTip": "Controllers\\EmployeController.cs",
-              "ViewState": "AQIAACMAAAAAAAAAAAAYwDIAAAAJAAAA",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAgwG4AAAARAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:54:36.353Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UserLoginDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\UserLoginDto.cs",
               "RelativeDocumentMoniker": "Dtos\\UserLoginDto.cs",
@@ -157,20 +147,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Employe.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
               "RelativeDocumentMoniker": "Models\\Employe.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Employe.cs",
               "RelativeToolTip": "Models\\Employe.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAA9wAcAAAAhAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAiwB0AAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-23T14:33:59.587Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -182,31 +172,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ClientController.cs",
-              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ClientController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ClientController.cs",
-              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ClientController.cs",
-              "RelativeToolTip": "Controllers\\ClientController.cs",
-              "ViewState": "AQIAAB4AAAAAAAAAAAAYwEEAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:55:36.768Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "MultiServicesContext.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Data\\MultiServicesContext.cs",
               "RelativeDocumentMoniker": "Data\\MultiServicesContext.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Data\\MultiServicesContext.cs",
               "RelativeToolTip": "Data\\MultiServicesContext.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAYwBkAAAAuAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAUwBcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T12:48:51.535Z"
+              "WhenOpened": "2024-08-23T12:48:51.535Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 6,
               "Title": "Category.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Category.cs",
               "RelativeDocumentMoniker": "Models\\Category.cs",
@@ -214,59 +193,51 @@
               "RelativeToolTip": "Models\\Category.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:35:47.468Z"
+              "WhenOpened": "2024-08-23T14:35:47.468Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Client.cs",
-              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Client.cs",
-              "RelativeDocumentMoniker": "Models\\Client.cs",
-              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Client.cs",
-              "RelativeToolTip": "Models\\Client.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:33:38.797Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 0,
               "Title": "ReviewDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\ReviewDto.cs",
               "RelativeDocumentMoniker": "Dtos\\ReviewDto.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Dtos\\ReviewDto.cs",
               "RelativeToolTip": "Dtos\\ReviewDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAnAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:57:50.011Z"
+              "WhenOpened": "2024-08-23T14:57:50.011Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 3,
               "Title": "Review.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Models\\Review.cs",
               "RelativeDocumentMoniker": "Models\\Review.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Models\\Review.cs",
               "RelativeToolTip": "Models\\Review.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAXAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:34:11.252Z"
+              "WhenOpened": "2024-08-23T14:34:11.252Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "ReviewController.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ReviewController.cs",
               "RelativeDocumentMoniker": "Controllers\\ReviewController.cs",
               "ToolTip": "E:\\MultiServices\\MultiServices_backend\\Controllers\\ReviewController.cs",
               "RelativeToolTip": "Controllers\\ReviewController.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAmwAwAAAAyAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-23T14:55:12.089Z"
+              "WhenOpened": "2024-08-23T14:55:12.089Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 13,
               "Title": "CategoryDto.cs",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\Dtos\\CategoryDto.cs",
               "RelativeDocumentMoniker": "Dtos\\CategoryDto.cs",
@@ -278,19 +249,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "E:\\MultiServices\\MultiServices_backend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-08-23T12:30:21.676Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 14,
               "Title": "MultiServices.http",
               "DocumentMoniker": "E:\\MultiServices\\MultiServices_backend\\MultiServices.http",
               "RelativeDocumentMoniker": "MultiServices.http",

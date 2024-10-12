@@ -28,6 +28,7 @@ namespace MultiServices.Controllers
             await _context.SaveChangesAsync();
             return category;
         }
+
         // GET ALL CATEGORIES
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CategoryDto>>> GetCategories()
@@ -69,6 +70,5 @@ namespace MultiServices.Controllers
             }
             return Ok(Employees.ToList());
         }
-
     }
 }
