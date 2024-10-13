@@ -2,21 +2,25 @@ import { Component, OnInit } from '@angular/core';
 import { AuthService } from '../../auth.service';
 import { ParcoursProfilesService } from '../../parcours-profiles.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ReviewServiceService } from '../../review-service.service';
+import { Review, ReviewAdd, ReviewServiceService } from '../../review-service.service';
+import { FormsModule } from '@angular/forms';
+import { NgFor, NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-reviews',
   standalone: true,
-  imports: [],
+  imports: [FormsModule,NgFor,NgIf],
   templateUrl: './reviews.component.html',
   styleUrl: './reviews.component.css'
 })
 export class ReviewsComponent implements OnInit  {
   currentUser: any;
   isCurrentUser: boolean = false;  // Savoir si on affiche le profil de l'utilisateur connecté ou d'un autre employé
-  authName: any;
-  ReviewComment:any;
-  date!:Date ;
+  review: Review = { authorName: '', reviewComment: '',date:''};
+  reviewAdd: ReviewAdd = { authorName: '', reviewComment: ''};
+  Reviews:Review[]=[];
+  employeeId:any;
+  successMessage: string = ''; 
   constructor(
     private authService: AuthService,
     private employeService: ParcoursProfilesService,  // Injecte le service des employés
@@ -27,11 +31,10 @@ export class ReviewsComponent implements OnInit  {
 
   ngOnInit(): void {
     // Vérifier s'il y a un ID dans l'URL
-    const employeeId = this.route.parent?.snapshot.paramMap.get('id');
-    console.log(employeeId);
-    if (employeeId) {
+    this.employeeId = this.route.parent?.snapshot.paramMap.get('id');
+    if (this.employeeId) {
       // Si un ID est présent dans l'URL, on récupère les détails de l'employé spécifique
-      this.employeService.getEmployeById(Number(employeeId)).subscribe(employee => {
+      this.employeService.getEmployeById(Number(this.employeeId)).subscribe(employee => {
         if (Array.isArray(employee)) {
           this.currentUser = employee[0];  // Prends le premier élément du tableau
         } else {
@@ -39,6 +42,7 @@ export class ReviewsComponent implements OnInit  {
         }
         this.isCurrentUser = false;  // Ce n'est pas l'utilisateur connecté
       });
+      this.getReviews(this.employeeId);
     } else {
       // Sinon, on récupère les détails de l'utilisateur connecté
       this.authService.getCurrentUser().subscribe(user => {
@@ -47,6 +51,47 @@ export class ReviewsComponent implements OnInit  {
       });
     }
   }
-  addReview()
+  addReview() {
+    console.log("Review to add:", this.reviewAdd);  // Pour vérifier si les champs sont bien remplis
+    this.reviewService.addReview(this.employeeId, this.reviewAdd).subscribe(
+      response => {
+        this.successMessage = 'Votre commentaire a été envoyé avec succès !'; // Message de succès
+        console.log("Review added successfully", response);
+      },
+      error => {
+        console.error("Error adding review", error);
+      }
+      
+    );
+    this.getReviews(this.employeeId);
+    this.reviewAdd.authorName='';
+    this.reviewAdd.reviewComment='';
+
+  }
+  getReviews(employeeId: number): void {
+    this.reviewService.getReviews(employeeId).subscribe(
+      (reviews: Review[]) => {
+        this.Reviews = reviews.reverse(); // Stocke les reviews récupérées
+        console.log(reviews);
+      },
+      error => {
+        console.error('Error fetching reviews', error);
+      }
+    );
+  }
+  formatDate(dateString: string): string {
+    const date = new Date(dateString);
+
+    const options: Intl.DateTimeFormatOptions = {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+      hour: '2-digit',
+      minute: '2-digit',
+    };
+
+    return date.toLocaleDateString('en-US', options);
+  }
+  
 }
 

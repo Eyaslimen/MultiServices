@@ -1,0 +1,95 @@
+/* Style du formulaire d'ajout de review */
+.reviewspage {
+    margin-top: 5%;
+    width: 87%;
+    margin-left: 5%;
+    background-color: #f9f9f9;
+    border: 1px solid rgba(0, 0, 0, 0.228);
+}
+form {
+    display: flex; /* Utilise le flexbox pour aligner les éléments */
+    align-items: center; /* Centre verticalement les éléments */
+    gap: 10px; /* Espace entre les éléments */
+    padding: 20px;
+    width: 84%;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+  
+  form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  form input[type="text"] {
+    width: 40%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  form button {
+    margin-top: -15px;
+    display: block;
+    background-color: #075b61;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+  
+  form button:hover {
+    background-color: #45a049;
+  }
+  .alert-success {
+   color: #45a049;
+   text-align: center;
+  }
+  /* Section des reviews */
+  .reviews {
+    width: 84%;
+    margin-left: 5%;
+    padding: 20px;
+  }
+  
+  .reviews h2 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .review {
+    margin-top: 20px;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .review h1 {
+    font-size: 20px;
+    margin: 0;
+    color: #e74c3c;
+  }
+  
+  .review p {
+    font-size: 16px;
+    margin: 10px 0 0;
+    color: #888;
+  }
+  
+  .review p {
+    margin: 10px 0;
+  }
+  

@@ -1,1 +1,23 @@
-<p>reviews works!</p>
+<div class="reviewspage">
+<form (ngSubmit)="addReview()" *ngIf="!isCurrentUser" >
+    <label for="authorName">Nom</label>
+    <input type="text" id="authorName" [(ngModel)]="reviewAdd.authorName" name="authorName" required>
+  
+    <label for="reviewComment">Commentaire:</label>
+    <input type="text" id="reviewComment" [(ngModel)]="reviewAdd.reviewComment" name="reviewComment" required>
+  
+    <button type="submit">Ajouter</button>
+  </form>
+  <div *ngIf="successMessage" class="alert-success">
+    {{ successMessage }}
+</div>
+<div class="reviews">
+     <p *ngIf="Reviews.length==0" style="text-align: center;color: red;">Il n y'a pas encore de commentaires !</p>
+    <p *ngIf="Reviews.length>0">Lisez les commentaires des Clients</p> 
+    <div class="review" *ngFor="let rev of Reviews" >
+    <h1 style="color: red;">{{rev.authorName}}</h1>
+    <p>{{formatDate(rev.date)}}<p>
+    <h3>{{rev.reviewComment}}</h3>
+</div>
+</div>
+</div>

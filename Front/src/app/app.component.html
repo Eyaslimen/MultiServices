@@ -6,7 +6,7 @@
       <div class="navbar-links">
         <a routerLink="/home" routerLinkActive="active">Accueil</a>
         <a routerLink="/profiles" routerLinkActive="active">Services</a>
-        <a routerLink="/userprofile" routerLinkActive="active">Aide</a>
+        <a routerLink="/aide" routerLinkActive="active">Aide</a>
         <img *ngIf="isAuthenticated()" [src]="'http://localhost:5239/' + currentUser.profilePhotoUrl" alt="{{ currentUser.name }}" routerLink="/userprofile" > 
         <a  *ngIf="!isAuthenticated()" routerLink="/register" routerLinkActive="active" class="btn-signup">Sign Up</a>
       </div>

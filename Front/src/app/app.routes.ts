@@ -11,7 +11,7 @@ import { VideosComponent } from './profile-page/videos/videos.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
 import { ProfileEditComponent } from './profile-edit/profile-edit.component';
 import { ProfilesComponent } from './profiles/profiles.component';
-
+import { AideComponent } from './aide/aide.component';
 export const routes: Routes = [
     {
         path:'',
@@ -42,6 +42,10 @@ export const routes: Routes = [
         path:'profiles',
         component:ProfilesComponent
     },
+    {
+      path:'aide',
+      component:AideComponent
+  },
     {
         path: 'userprofile',
         component: ProfilePageComponent,
