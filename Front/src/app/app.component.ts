@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {RouterLink, RouterOutlet } from '@angular/router';
 import { NgClass, NgIf } from '@angular/common';
 import { CommonModule } from '@angular/common';
-import { AuthService } from './auth.service';
+import { AuthService } from './Services/auth.service';
 @Component({
   selector: 'app-root',
   standalone: true,

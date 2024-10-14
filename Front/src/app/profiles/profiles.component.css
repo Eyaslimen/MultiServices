@@ -30,13 +30,14 @@ input[type="text"] {
     margin-left: -10%;
     width: 150px;
     border: none;
-    background-color: #b2f4d9;
+    background-color: #29d3c2;
     border-radius:25px;
     padding: 10px;
     cursor: pointer;
 }
 .s2 > button:hover {
     background-color: #8df8cb;
+    color:white;
 }
 
 
@@ -49,12 +50,14 @@ input[type="text"] {
 ul {
     list-style-type: none;
     height: 100%;
+    margin-left: -5%;
+
   }
 li {
     margin-top: 3px;
     padding: 5px;
-    border: 0.5px solid rgba(128, 128, 128, 0.358);
-    width: 80px;
+    border-bottom: 0.5px solid rgba(128, 128, 128, 0.358);
+    width: 120px;
     cursor: pointer;
 }
 li:hover {
@@ -69,17 +72,17 @@ li:hover {
     row-gap: 5%;
 }
 .worker {
-    width: 90%;
+    width: 80%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre les éléments horizontalement */
-    height: 300px;
+    height: 260px;
     padding: 5%;
     text-align: center;
-    border: 1.5px solid rgba(128, 128, 128, 0.537);
-    background-color: rgba(255, 255, 255, 0.445);
-    box-shadow: 2px 5px 2px 1px rgba(128, 128, 128, 0.537);
+    border: 0.5px solid rgba(128, 128, 128, 0.297);
+    background-color: rgba(255, 255, 255, 0.315);
+    box-shadow: 2px 5px 2px 1px rgba(128, 128, 128, 0.297);
 
 }
 .worker > img {
@@ -92,7 +95,7 @@ li:hover {
     height: 40px;
     width: 150px;
     border: none;
-    background-color: #b2f4d9;
+    background-color: #29d3c2;
     border-radius:25px;
     padding: 10px;
     cursor: pointer;
@@ -102,4 +105,8 @@ li:hover {
 
 }
   
- 
+p {
+    line-height: -1;
+    margin-top: -5px;
+
+}

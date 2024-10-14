@@ -1,8 +1,8 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { Category, Employe,ParcoursProfilesService } from '../parcours-profiles.service';
 import { CommonModule, NgFor, NgIf } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Category, Employe, ParcoursProfilesService } from '../Services/parcours-profiles.service';
 
 @Component({
   selector: 'app-profiles',

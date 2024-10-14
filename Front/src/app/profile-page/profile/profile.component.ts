@@ -4,8 +4,8 @@ import { NgFor } from '@angular/common';
 import { NgIf } from '@angular/common';
 import { ActivatedRoute, Router,RouterLink, RouterOutlet } from '@angular/router'; // on remarque qu'on n'import pas router !! on l'injecte comme un service , on l'ajoute pas a imports !!!
 import { RouterModule } from '@angular/router';
-import { AuthService } from '../../auth.service';
-import { ParcoursProfilesService } from '../../parcours-profiles.service';
+import { AuthService } from '../../Services/auth.service';
+import { ParcoursProfilesService } from '../../Services/parcours-profiles.service';
 @Component({
   selector: 'app-profile',
   standalone: true,

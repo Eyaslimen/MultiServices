@@ -149,6 +149,28 @@ namespace MultiServices.Controllers
             // Vérifiez ici les valeurs renvoyées pour s'assurer qu'elles ne sont pas nulles ou vides
             return Ok(user);
         }
+        [HttpDelete("delete-all")]
+        public async Task<IActionResult> DeleteAllUsers()
+        {
+            try
+            {
+                var users = _context.Employees.ToList(); // Récupère tous les utilisateurs
+
+                if (users == null || !users.Any())
+                {
+                    return NotFound("Aucun utilisateur trouvé.");
+                }
+
+                _context.Employees.RemoveRange(users); // Supprime tous les utilisateurs
+                await _context.SaveChangesAsync();
+
+                return NoContent(); // 204 No Content
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur lors de la suppression des utilisateurs : {ex.Message}");
+            }
+        }
 
         private bool VerifyPasswordHash(string password, string storedHash, string storedSalt)
         {

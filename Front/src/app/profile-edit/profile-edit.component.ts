@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import  {OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http'; // Pour faire une requête HTTP au backend
 import { Router, RouterLink, RouterModule, RouterOutlet } from '@angular/router'; // Pour rediriger après la mise à jour
-import { AuthService } from '../auth.service';
+import { AuthService } from '../Services/auth.service';
 import { FormsModule } from '@angular/forms';
 import { NgFor } from '@angular/common';
 @Component({

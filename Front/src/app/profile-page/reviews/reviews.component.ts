@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { AuthService } from '../../auth.service';
-import { ParcoursProfilesService } from '../../parcours-profiles.service';
+import { AuthService } from '../../Services/auth.service';
+import { ParcoursProfilesService } from '../../Services/parcours-profiles.service';
 import { ActivatedRoute, Router } from '@angular/router';
-import { Review, ReviewAdd, ReviewServiceService } from '../../review-service.service';
+import { Review, ReviewAdd, ReviewServiceService } from '../../Services/review-service.service';
 import { FormsModule } from '@angular/forms';
 import { NgFor, NgIf } from '@angular/common';
 

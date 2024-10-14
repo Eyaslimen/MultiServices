@@ -2,9 +2,9 @@ import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../Services/auth.service';
 import { RouterModule } from '@angular/router';
-import { Category, ParcoursProfilesService } from '../parcours-profiles.service';
+import { Category, ParcoursProfilesService } from '../Services/parcours-profiles.service';
 import { NgFor } from '@angular/common';
 
 @Component({

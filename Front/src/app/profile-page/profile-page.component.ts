@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 import { NgClass } from '@angular/common';
 import { CommonModule } from '@angular/common';
-import { AuthService } from '../auth.service';
+import { AuthService } from '../Services/auth.service';
 import { FormsModule } from '@angular/forms'; //pour ngModel
 import { NgFor } from '@angular/common';
 import { NgIf } from '@angular/common';
-import { ParcoursProfilesService } from '../parcours-profiles.service';
+import { ParcoursProfilesService } from '../Services/parcours-profiles.service';
 @Component({
   selector: 'app-profile-page',
   standalone: true,
