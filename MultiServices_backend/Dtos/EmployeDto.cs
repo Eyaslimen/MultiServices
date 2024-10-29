@@ -8,7 +8,7 @@ namespace MultiServices.Dtos
         public string EmployeName { get; set; }
         public string Email { get; set; }
         public string Phone { get; set; }
-        public string Post { get; set; }
+        public string Post { get; set; } 
         public string Place { get; set; }
         public string Password { get; set; }
         public string? ProfilePhotoUrl { get; set; }

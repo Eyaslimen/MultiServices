@@ -21,10 +21,8 @@ export class AideComponent implements AfterViewInit {
 
   toggleAccordion(item: Element) {
     const itemToggle = item.getAttribute('aria-expanded');
-
     const items = this.elementRef.nativeElement.querySelectorAll('.accordion button');
     items.forEach((item: { setAttribute: (arg0: string, arg1: string) => any; }) => item.setAttribute('aria-expanded', 'false'));
-
     if (itemToggle === 'false') {
       item.setAttribute('aria-expanded', 'true');
     }

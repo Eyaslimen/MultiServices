@@ -23,28 +23,30 @@ export class ProfilesComponent {
   ngOnInit(): void {
     this.loadCategories();
   }
-  viewEmployeeDetails(employeeId: number): void {
-    this.router.navigate(['/employees', employeeId]);  // Navigue vers la page de l'employé
-  }
+  // acceder au categories
   loadCategories(): void {
     this.employeService.getCategories().subscribe(data => {
       this.categories = data;
-      this.onCategorySelected(6);
+      this.onCategorySelected(6); // j'ai fais ça en ngOnInit pour que j'affiche au debut la categorie Technologie !
     });
   }
-
+  //identifie la categorie choisi 
   onCategorySelected(categoryId: number): void {
     this.selectedCategoryId = categoryId;
     this.loadEmployees(categoryId);
     this.categorySelected.emit(categoryId);
-
   }
-
+  // afficher l'ensemble des employees par categorie
   loadEmployees(categoryId: number): void {
     this.employeService.getProfilesByCategory(categoryId).subscribe(data => {
       this.employees = data;
     });
   }
+  // acceder à un employe spécifique 
+  viewEmployeeDetails(employeeId: number): void {
+    this.router.navigate(['/employees', employeeId]);  // Navigue vers la page de l'employé
+  }
+
   onSearchClick() : void {
     if (this.selectedCategoryId !== null) {
       this.employeService.searchemployees(this.selectedCategoryId, this.query).subscribe(employees => {
@@ -52,5 +54,4 @@ export class ProfilesComponent {
       });
     }
   }
-
 }

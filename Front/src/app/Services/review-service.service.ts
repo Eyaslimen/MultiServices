@@ -9,8 +9,8 @@ export class ReviewServiceService {
   private baseUrl = 'http://localhost:5239/api/Review';
   constructor(private http: HttpClient) { }
 
-  getReviews(categoryId:number): Observable<Review[]> {
-    return this.http.get<Review[]>(`${this.baseUrl}/${categoryId}/reviews`);
+  getReviews(employeId:number): Observable<Review[]> {
+    return this.http.get<Review[]>(`${this.baseUrl}/${employeId}/reviews`);
   } 
   addReview(employeId: number, review: ReviewAdd): Observable<Review> {
     return this.http.post<Review>(`${this.baseUrl}/${employeId}/reviews`, review);

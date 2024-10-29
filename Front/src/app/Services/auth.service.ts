@@ -8,10 +8,11 @@ import { BehaviorSubject, catchError, Observable, tap, throwError } from 'rxjs';
 export class AuthService {
   private apiUrl = 'http://localhost:5239/api/Employe';
   private currentUserSubject: BehaviorSubject<any>;
-  public currentUser: Observable<any>;
+  public currentUser: Observable<any>; // l'observable de currentUserSubject ! il est  màj à chaque fois que currentUserSubject est changé
   
   constructor(private http: HttpClient) {
     const storedUser = localStorage.getItem('currentUser');
+    // les infos de l'utilisateur sont enregistrées sous forme d'un json file , quand on va acceder a cet user infos , on a besoin de les transformer en objet JavaScript
     this.currentUserSubject = new BehaviorSubject<any>(storedUser ? JSON.parse(storedUser) : null);
     this.currentUser = this.currentUserSubject.asObservable();
   }
@@ -22,14 +23,14 @@ export class AuthService {
     }).pipe(
       tap(response => {
         console.log('Login response:', response); // Vérifiez les valeurs ici
-        localStorage.setItem('currentUser', JSON.stringify(response));
-        this.currentUserSubject.next(response);
+        localStorage.setItem('currentUser', JSON.stringify(response)); // transformer reponse en Json et le stocker dans LocalStorage sous le clé currentUser
+        this.currentUserSubject.next(response); // mise à jour de currentUserSubject ! 
       }),
       catchError(error => {
         console.error('Error logging in', error); // Ajoutez des journaux pour les erreurs
         return throwError(error);
       })
-    );
+    ); 
   }
 
   /* The `logout()` method in the AuthService class is responsible for logging out the current user.
@@ -68,5 +69,4 @@ export class AuthService {
       })
     );
   }
-
 }

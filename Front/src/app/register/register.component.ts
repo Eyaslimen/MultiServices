@@ -29,20 +29,22 @@ export class RegisterComponent {
       this.categories = data;
     });
   }
+
+  // stocker les fichiers et les videos importées dans leurs variables spécifiques 
   handleProfilePhotoInput(event: Event) {
+    // event.target represente l'element html <input ... > ; on l'ajoute as htmlInputElement pour etre capable d'acceder au propriétés spécifique de ce type , comme files !
     const input = event.target as HTMLInputElement;
+    // Verifier qu'une photo est importée 
     if (input && input.files && input.files.length > 0) {
       this.profilePhoto = input.files.item(0);
     }
   }
-
   handleWorkPhotosInput(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input && input.files) {
       this.workPhotos = Array.from(input.files);
     }
   } 
-
   handleWorkVideosInput(event: Event) {
     const input = event.target as HTMLInputElement;
     if (input && input.files) {
@@ -68,9 +70,7 @@ export class RegisterComponent {
 
       if (this.workPhotos.length > 0) {
         this.workPhotos.forEach(photo => {
-          formData.append('WorkPhotos', /* In the `onSubmit` method of the `RegisterComponent` class,
-          the `photo` variable is used as a parameter in the `forEach`
-          loop to iterate over the `workPhotos` array. */
+          formData.append('WorkPhotos',
           photo, photo.name);
         });
       }

@@ -52,14 +52,9 @@ namespace MultiServices.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] EmployeDto employeRegisterDto)
         {
-            if (await UserExists(employeRegisterDto.EmployeName))
-                return BadRequest("Username is already taken");
 
             var category = await _context.Categories
                 .FirstOrDefaultAsync(c => c.Name == employeRegisterDto.CategoryName);
-
-            if (category == null)
-                return BadRequest("Category not found");
             
             CreatePasswordHash(employeRegisterDto.Password, out string passwordHash, out string passwordSalt);
 
@@ -81,10 +76,11 @@ namespace MultiServices.Controllers
             {
                 // Save file to wwwroot/uploads
                 string fileName = Path.GetFileName(employeRegisterDto.ProfilePhoto.FileName);
+                // Construit le chemin complet où le fichier sera stocké sur le serveur
                 string profilePhotoPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads", fileName);
-
                 using (var stream = new FileStream(profilePhotoPath, FileMode.Create))
                 {
+                    //  copie de manière asynchrone le contenu de ProfilePhoto dans ce FileStream que nous avons creer
                     await employeRegisterDto.ProfilePhoto.CopyToAsync(stream);
                 }
 
@@ -149,6 +145,7 @@ namespace MultiServices.Controllers
             // Vérifiez ici les valeurs renvoyées pour s'assurer qu'elles ne sont pas nulles ou vides
             return Ok(user);
         }
+        //supprimer tous les profiles 
         [HttpDelete("delete-all")]
         public async Task<IActionResult> DeleteAllUsers()
         {
@@ -204,7 +201,8 @@ namespace MultiServices.Controllers
             return Ok(Employe);
         }
 
-
+         
+        // changer le profile de l'employé
 
         [HttpPut("editprofile")]
         public async Task<IActionResult> UpdateProfile([FromForm] EmployeUpdateDto employeUpdateDto)
@@ -213,11 +211,12 @@ namespace MultiServices.Controllers
 
             if (user == null) return NotFound("User not found");
 
-            user.EmployeName = employeUpdateDto.EmployeName;
+            
             user.Place = employeUpdateDto.Place;
             user.Description = employeUpdateDto.Description;
             user.Email = employeUpdateDto.Email;
             user.Phone = employeUpdateDto.Phone;
+            // prendre exactement urls des photos et videos qui restent ( aprés suppression )
             user.PhotoUrls = employeUpdateDto.PhotoUrls;
             user.VideoUrls = employeUpdateDto.VideoUrls;
             // Met à jour le mot de passe si un nouveau est fourni
@@ -239,7 +238,8 @@ namespace MultiServices.Controllers
                 }
                 user.ProfilePhotoUrl = "/uploads/" + fileName;
             }
-            // Si des photos sont téléchargées, les ajouter
+            // ajouter urls des photos et videos qui sont récemment ajoutées 
+            // photos
             if (employeUpdateDto.WorkPhotos != null)
             {
                 foreach (var photo in employeUpdateDto.WorkPhotos)
@@ -253,8 +253,7 @@ namespace MultiServices.Controllers
                     user.PhotoUrls.Add("/uploads/" + fileName); // Ajoute la nouvelle photo
                 }
             }
-
-            // Si des vidéos sont téléchargées, les ajouter
+            // videos
             if (employeUpdateDto.WorkVideos != null)
             {
                 foreach (var video in employeUpdateDto.WorkVideos)
@@ -268,9 +267,6 @@ namespace MultiServices.Controllers
                     user.VideoUrls.Add("/uploads/" + fileName); // Ajoute la nouvelle vidéo
                 }
             }
-
-            // Si vous souhaitez conserver les photos et vidéos existantes,
-            // ne les remplacez pas, seulement ajoutez les nouvelles.
 
             await _context.SaveChangesAsync();
             return Ok(user);
