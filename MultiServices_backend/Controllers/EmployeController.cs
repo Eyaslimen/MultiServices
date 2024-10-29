@@ -20,6 +20,7 @@ namespace MultiServices.Controllers
         {
             _context = context;
         }
+        // acceder a tt les employés 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<EmployeDto>>> GetEmployes()
 
@@ -48,6 +49,15 @@ namespace MultiServices.Controllers
             return Ok(employes);
         }
 
+        // get employe by id : 
+        [HttpGet("id")]
+        public async Task<ActionResult<EmployeDto>> GetEmploye(int id)
+        {
+            var Employe = _context.Employees.Where(e => e.EmployeId == id);
+            return Ok(Employe);
+        }
+
+        // enregistrer un employe 
 
         [HttpPost("register")]
         public async Task<IActionResult> Register([FromForm] EmployeDto employeRegisterDto)
@@ -132,7 +142,7 @@ namespace MultiServices.Controllers
             return Ok(new { user.EmployeId, user.EmployeName });
         }
 
-        // Spécifie que cette méthode répond aux requêtes POST à api/Users/login.
+        // s'inscrire 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserLoginDto request)
         {
@@ -145,65 +155,11 @@ namespace MultiServices.Controllers
             // Vérifiez ici les valeurs renvoyées pour s'assurer qu'elles ne sont pas nulles ou vides
             return Ok(user);
         }
-        //supprimer tous les profiles 
-        [HttpDelete("delete-all")]
-        public async Task<IActionResult> DeleteAllUsers()
-        {
-            try
-            {
-                var users = _context.Employees.ToList(); // Récupère tous les utilisateurs
-
-                if (users == null || !users.Any())
-                {
-                    return NotFound("Aucun utilisateur trouvé.");
-                }
-
-                _context.Employees.RemoveRange(users); // Supprime tous les utilisateurs
-                await _context.SaveChangesAsync();
-
-                return NoContent(); // 204 No Content
-            }
-            catch (Exception ex)
-            {
-                return StatusCode(500, $"Erreur lors de la suppression des utilisateurs : {ex.Message}");
-            }
-        }
-
-        private bool VerifyPasswordHash(string password, string storedHash, string storedSalt)
-        {
-            using (var hmac = new HMACSHA512(Convert.FromBase64String(storedSalt)))
-            {
-                var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
-                return computedHash.SequenceEqual(Convert.FromBase64String(storedHash));
-            }
-        }
-
-        private void CreatePasswordHash(string password, out string passwordHash, out string passwordSalt)
-        {
-            using (var hmac = new HMACSHA512())
-            {
-                passwordSalt = Convert.ToBase64String(hmac.Key);
-                passwordHash = Convert.ToBase64String(hmac.ComputeHash(Encoding.UTF8.GetBytes(password)));
-            }
-        }
 
 
-        private async Task<bool> UserExists(string username)
-        {
-            return await _context.Employees.AnyAsync(u => u.EmployeName == username);
-        }
-
-        // get employe by id : 
-        [HttpGet("id")]
-        public async Task<ActionResult<EmployeDto>> GetEmploye(int id)
-        {
-            var Employe = _context.Employees.Where(e => e.EmployeId == id);
-            return Ok(Employe);
-        }
 
          
         // changer le profile de l'employé
-
         [HttpPut("editprofile")]
         public async Task<IActionResult> UpdateProfile([FromForm] EmployeUpdateDto employeUpdateDto)
         {
@@ -272,7 +228,56 @@ namespace MultiServices.Controllers
             return Ok(user);
         }
 
+        //supprimer tous les profiles 
+        [HttpDelete("delete-all")]
+        public async Task<IActionResult> DeleteAllUsers()
+        {
+            try
+            {
+                var users = _context.Employees.ToList(); // Récupère tous les utilisateurs
 
+                if (users == null || !users.Any())
+                {
+                    return NotFound("Aucun utilisateur trouvé.");
+                }
+
+                _context.Employees.RemoveRange(users); // Supprime tous les utilisateurs
+                await _context.SaveChangesAsync();
+
+                return NoContent(); // 204 No Content
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"Erreur lors de la suppression des utilisateurs : {ex.Message}");
+            }
+        }
+
+
+
+        // methodes que nous avons utilisées : 
+        private bool VerifyPasswordHash(string password, string storedHash, string storedSalt)
+        {
+            using (var hmac = new HMACSHA512(Convert.FromBase64String(storedSalt)))
+            {
+                var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));
+                return computedHash.SequenceEqual(Convert.FromBase64String(storedHash));
+            }
+        }
+
+        private void CreatePasswordHash(string password, out string passwordHash, out string passwordSalt)
+        {
+            using (var hmac = new HMACSHA512())
+            {
+                passwordSalt = Convert.ToBase64String(hmac.Key);
+                passwordHash = Convert.ToBase64String(hmac.ComputeHash(Encoding.UTF8.GetBytes(password)));
+            }
+        }
+
+
+        private async Task<bool> UserExists(string username)
+        {
+            return await _context.Employees.AnyAsync(u => u.EmployeName == username);
+        }
 
     }
 }

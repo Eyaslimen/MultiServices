@@ -13,10 +13,9 @@ export class ReviewServiceService {
     return this.http.get<Review[]>(`${this.baseUrl}/${employeId}/reviews`);
   } 
   addReview(employeId: number, review: ReviewAdd): Observable<Review> {
+    // cette methode nous retourne le review que nous avons ajouté en reponse 
     return this.http.post<Review>(`${this.baseUrl}/${employeId}/reviews`, review);
   }
-
-
 }
 export interface Review {
   authorName: string;

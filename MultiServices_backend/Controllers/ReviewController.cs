@@ -20,6 +20,8 @@ namespace MultiServices.Controllers
         {
             _context = context;
         }
+
+        // ajouter un review a un employé par son ID 
         [HttpPost("{id}/reviews")]
         public async Task<IActionResult> AddReview(int id, [FromBody] ReviewDto reviewDto)
         {
@@ -47,6 +49,8 @@ namespace MultiServices.Controllers
 
             return Ok(responseReviewDto);
         }
+
+        // retourner l'ensemble de reviewss : 
         [HttpGet("{id}/reviews")]
         public IActionResult GetReviews(int id)
         {

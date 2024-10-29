@@ -42,7 +42,6 @@ export class ReviewsComponent implements OnInit  {
         }
         this.isCurrentUser = false;  // Ce n'est pas l'utilisateur connecté
       });
-      this.getReviews(this.employeeId);
     } else {
       // Sinon, on récupère les détails de l'utilisateur connecté
       this.authService.getCurrentUser().subscribe(user => {
@@ -50,6 +49,7 @@ export class ReviewsComponent implements OnInit  {
         this.isCurrentUser = true;  // C'est l'utilisateur connecté
       });
     }
+    this.getReviews(this.currentUser.employeId);
   }
   addReview() {
     console.log("Review to add:", this.reviewAdd);  // Pour vérifier si les champs sont bien remplis
@@ -66,12 +66,11 @@ export class ReviewsComponent implements OnInit  {
     this.getReviews(this.employeeId);
     this.reviewAdd.authorName='';
     this.reviewAdd.reviewComment='';
-
   }
   getReviews(employeeId: number): void {
     this.reviewService.getReviews(employeeId).subscribe(
       (reviews: Review[]) => {
-        this.Reviews = reviews.reverse(); // Stocke les reviews récupérées
+        this.Reviews = reviews.reverse(); // Stock les reviews récupérées de plus récent
         console.log(reviews);
       },
       error => {
@@ -81,7 +80,6 @@ export class ReviewsComponent implements OnInit  {
   }
   formatDate(dateString: string): string {
     const date = new Date(dateString);
-
     const options: Intl.DateTimeFormatOptions = {
       year: 'numeric',
       month: 'short',

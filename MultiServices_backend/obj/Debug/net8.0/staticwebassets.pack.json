@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\$.jpg",
+      "PackagePath": "staticwebassets\\uploads\\$.jpg"
+    },
+    {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\1a764a7f649deb2c637fccdc568e91fb.jpg",
       "PackagePath": "staticwebassets\\uploads\\1a764a7f649deb2c637fccdc568e91fb.jpg"
     },
@@ -9,12 +13,32 @@
       "PackagePath": "staticwebassets\\uploads\\1e3a72a787aef71a458b59092289ad1e.jpg"
     },
     {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\23e1c46b843032387b9c95392e017979.jpg",
+      "PackagePath": "staticwebassets\\uploads\\23e1c46b843032387b9c95392e017979.jpg"
+    },
+    {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\2eba75e4e8c35495227ce35b40b6046d.jpg",
       "PackagePath": "staticwebassets\\uploads\\2eba75e4e8c35495227ce35b40b6046d.jpg"
     },
     {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\2fa32f6b23534ed9c1b9ef479f9908f2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\2fa32f6b23534ed9c1b9ef479f9908f2.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\5ee9727b16e7fd3b0cf60606c3c67d6b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\5ee9727b16e7fd3b0cf60606c3c67d6b.jpg"
+    },
+    {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\64d03624b12198a7dec6b4b1650251cf.jpg",
       "PackagePath": "staticwebassets\\uploads\\64d03624b12198a7dec6b4b1650251cf.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Accesso.mp4",
+      "PackagePath": "staticwebassets\\uploads\\Accesso.mp4"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163129.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163129.png"
     },
     {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163154.png",
@@ -29,12 +53,72 @@
       "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163533.png"
     },
     {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2023-11-29 163559.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2023-11-29 163559.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Capture d’écran 2024-10-28 231331.png",
+      "PackagePath": "staticwebassets\\uploads\\Capture d’écran 2024-10-28 231331.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Infirmier-auxiliaire-autorise-1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Infirmier-auxiliaire-autorise-1.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\MultiServicesFront - Google Chrome 2024-10-28 23-09-37.mp4",
+      "PackagePath": "staticwebassets\\uploads\\MultiServicesFront - Google Chrome 2024-10-28 23-09-37.mp4"
+    },
+    {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\Untitled video - Made with Clipchamp.mp4",
       "PackagePath": "staticwebassets\\uploads\\Untitled video - Made with Clipchamp.mp4"
     },
     {
       "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\aya (2).jpg",
       "PackagePath": "staticwebassets\\uploads\\aya (2).jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\c57d3d7b-54dd-40b5-b8cf-cdcf5faef239.png",
+      "PackagePath": "staticwebassets\\uploads\\c57d3d7b-54dd-40b5-b8cf-cdcf5faef239.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\certif1.png",
+      "PackagePath": "staticwebassets\\uploads\\certif1.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\certif2.png",
+      "PackagePath": "staticwebassets\\uploads\\certif2.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\d51da618e4de05e097bb69b62b63a825.jpg",
+      "PackagePath": "staticwebassets\\uploads\\d51da618e4de05e097bb69b62b63a825.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\eyaslimen.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eyaslimen.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\jeune-homme-comme-charpentier-ou-menuisier-avec-des-poutres-a-la-raboteuse-rwrxrg.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jeune-homme-comme-charpentier-ou-menuisier-avec-des-poutres-a-la-raboteuse-rwrxrg.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\menuisier.jpg",
+      "PackagePath": "staticwebassets\\uploads\\menuisier.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\p1.png",
+      "PackagePath": "staticwebassets\\uploads\\p1.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\p2.png",
+      "PackagePath": "staticwebassets\\uploads\\p2.png"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\p3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\p3.jpg"
+    },
+    {
+      "Id": "E:\\MultiServices\\MultiServices_backend\\wwwroot\\uploads\\peinture-abstraite-coloree-25-01-24.jpg",
+      "PackagePath": "staticwebassets\\uploads\\peinture-abstraite-coloree-25-01-24.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MultiServices.Microsoft.AspNetCore.StaticWebAssets.props",

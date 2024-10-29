@@ -56,13 +56,12 @@ namespace MultiServices.Controllers
 
             return Ok(categories);
         }
-
+        // Get employees by categoryId
         [HttpGet("{categoryId}/employees")]
         public IActionResult GetProductsByCategory(int categoryId, [FromQuery] string? query)
         {
             // acceder au produits d'une categorie bien précis
             var Employees = _context.Employees.Where(e => e.CategoryId == categoryId);
-            // filter by price
             //search !! 
             if (!string.IsNullOrEmpty(query))
             {
